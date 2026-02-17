@@ -248,7 +248,7 @@ const solutions = [
 
 const RepairSolutions = () => {
   return (
-    <section className="py-24 bg-gray-50/50">
+    <section className="py-24 bg-gray-50/50" id="repair-solutions">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100/50 text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase mb-4 shadow-sm"><Sparkles size={12} /> Service Catalog</div>

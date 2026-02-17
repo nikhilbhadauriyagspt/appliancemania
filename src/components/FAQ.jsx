@@ -99,7 +99,7 @@ const FAQ = () => {
               <p className="text-gray-400 text-sm font-medium">Our support team is online and ready to help.</p>
            </div>
            <Link to="/contact" className="relative z-10 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-blue-600/20 active:scale-95">
-              Chat With Expert
+              Contact Us
            </Link>
         </div>
 

@@ -99,7 +99,15 @@ const Hero = () => {
                 </span>
               </button>
               
-              <button className="w-full sm:w-auto px-10 py-5 bg-white border-2 border-gray-100 text-gray-900 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 hover:border-gray-200 transition-all active:scale-95 cursor-pointer flex items-center justify-center">
+              <button 
+                onClick={() => {
+                  const element = document.getElementById('repair-solutions');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="w-full sm:w-auto px-10 py-5 bg-white border-2 border-gray-100 text-gray-900 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 hover:border-gray-200 transition-all active:scale-95 cursor-pointer flex items-center justify-center"
+              >
                 Explore Services
               </button>
             </div>

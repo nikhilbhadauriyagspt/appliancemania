@@ -60,7 +60,7 @@ const ContactSection = () => {
             </div>
 
             <form className="space-y-10">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div className="relative group/input">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1 mb-2 block group-focus-within/input:text-blue-600 transition-colors">Full Name</label>
                   <input 
@@ -75,6 +75,14 @@ const ContactSection = () => {
                     type="email" 
                     className="w-full bg-gray-50 border-none px-6 py-4 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/5 outline-none transition-all font-bold text-gray-900 shadow-inner" 
                     placeholder="john@example.com" 
+                  />
+                </div>
+                <div className="relative group/input">
+                  <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1 mb-2 block group-focus-within/input:text-blue-600 transition-colors">Mobile Number</label>
+                  <input 
+                    type="tel" 
+                    className="w-full bg-gray-50 border-none px-6 py-4 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/5 outline-none transition-all font-bold text-gray-900 shadow-inner" 
+                    placeholder="+91 XXXXX XXXXX" 
                   />
                 </div>
               </div>
