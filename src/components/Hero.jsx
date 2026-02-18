@@ -67,22 +67,25 @@ const Hero = () => {
             </div>
 
             <div className="relative overflow-hidden h-[140px] sm:h-[180px] lg:h-[200px] mb-6">
-              {slides.map((slide, index) => (
-                <div 
-                  key={index}
-                  className={`absolute inset-0 transition-all duration-1000 ease-[cubic-bezier(0.23,1,0.32,1)] transform ${
-                    index === current ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-20 opacity-0 scale-95'
-                  }`}
-                >
-                  <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] tracking-tighter">
-                    {slide.title} <br />
-                    <span className={`bg-gradient-to-r ${slide.color} bg-clip-text text-transparent`}>
-                      {slide.highlight}
-                    </span> <br />
-                    {slide.suffix}
-                  </h1>
-                </div>
-              ))}
+              {slides.map((slide, index) => {
+                const Tag = index === current ? 'h1' : 'div';
+                return (
+                  <div 
+                    key={index}
+                    className={`absolute inset-0 transition-all duration-1000 ease-[cubic-bezier(0.23,1,0.32,1)] transform ${
+                      index === current ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-20 opacity-0 scale-95'
+                    }`}
+                  >
+                    <Tag className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] tracking-tighter">
+                      {slide.title} <br />
+                      <span className={`bg-gradient-to-r ${slide.color} bg-clip-text text-transparent`}>
+                        {slide.highlight}
+                      </span> <br />
+                      {slide.suffix}
+                    </Tag>
+                  </div>
+                );
+              })}
             </div>
 
             <p className="text-gray-500 text-sm sm:text-lg lg:text-xl font-medium max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">

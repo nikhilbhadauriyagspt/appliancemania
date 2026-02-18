@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const LatestBlogs = () => {
   const posts = [
     {
+      id: 1,
       title: "5 Signs Your Washing Machine Needs Professional Service",
       excerpt: "Don't wait for a flood. Learn how to spot early warning signs of failure.",
       category: "Maintenance",
@@ -11,6 +12,7 @@ const LatestBlogs = () => {
       image: "/washing.png"
     },
     {
+      id: 2,
       title: "Why Your Refrigerator Is Making Strange Noises",
       excerpt: "Strange sounds can mean many things. Here is a diagnostic guide.",
       category: "Kitchen",
@@ -18,6 +20,7 @@ const LatestBlogs = () => {
       image: "/refrigerator.png"
     },
     {
+      id: 3,
       title: "Ultimate Guide to AC Deep Cleaning for Summer",
       excerpt: "Ensure your split AC is clean, gassed, and running efficiently.",
       category: "HVAC",
@@ -50,7 +53,7 @@ const LatestBlogs = () => {
           {posts.map((post, idx) => (
             <Link 
               key={idx} 
-              to="/blog" 
+              to={`/blog/${post.id}`} 
               className="group bg-white rounded-[40px] overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-500 hover:shadow-[0_32px_64px_rgba(0,0,0,0.06)] flex flex-col"
             >
               <div className="relative h-60 overflow-hidden">
