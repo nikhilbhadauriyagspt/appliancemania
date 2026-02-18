@@ -93,7 +93,7 @@ const Blog = () => {
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-10">
             <TrendingUp className="text-blue-600" size={24} />
-            <h3 className="text-2xl font-black text-gray-900 tracking-tight uppercase">Latest Articles</h3>
+            <h2 className="text-2xl font-black text-gray-900 tracking-tight uppercase">Latest Articles</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">

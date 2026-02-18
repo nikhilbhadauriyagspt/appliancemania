@@ -92,7 +92,7 @@ const FAQ = () => {
         <div className="mt-16 p-8 rounded-[40px] bg-gray-900 text-white flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 blur-[60px]" />
            <div className="relative z-10 text-center md:text-left">
-              <h4 className="text-xl font-black mb-1">Still have questions?</h4>
+              <h3 className="text-xl font-black mb-1">Still have questions?</h3>
               <p className="text-gray-400 text-sm font-medium">Our support team is online and ready to help.</p>
            </div>
            <Link to="/contact" className="relative z-10 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-blue-600/20 active:scale-95">
