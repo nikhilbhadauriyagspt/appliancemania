@@ -1,8 +1,44 @@
-import { Mail, Send, ArrowRight, Sparkles, MapPin, Globe } from 'lucide-react';
+import { Mail, Send, ArrowRight, Sparkles, MapPin, Globe, CheckCircle2 } from 'lucide-react';
+import { useState } from 'react';
 
 const ContactSection = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setIsSuccess(true);
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setIsSuccess(false);
+      }, 5000);
+      
+      // Reset form (optional, depending on UX preference)
+      e.target.reset();
+    }, 1500);
+  };
+
   return (
     <section className="py-24 bg-white relative overflow-hidden">
+      {/* Success Toast */}
+      <div className={`fixed bottom-8 right-8 z-[100] transition-all duration-500 transform ${isSuccess ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0 pointer-events-none'}`}>
+        <div className="bg-gray-900 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4 border border-white/10 backdrop-blur-xl">
+          <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
+            <CheckCircle2 size={20} />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xs font-black uppercase tracking-widest">Message Sent!</span>
+            <span className="text-[10px] font-medium text-gray-400">Our experts will contact you soon.</span>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -44,11 +80,12 @@ const ContactSection = () => {
           {/* Contact Form Column */}
           <div className="lg:w-2/3 bg-white border border-gray-100 rounded-[56px] p-8 lg:p-16 shadow-[0_32px_100px_rgba(0,0,0,0.05)] relative overflow-hidden group">
 
-            <form className="space-y-10">
+            <form className="space-y-10" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div className="relative group/input">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1 mb-2 block group-focus-within/input:text-blue-600 transition-colors">Full Name</label>
                   <input 
+                    required
                     type="text" 
                     className="w-full bg-gray-50 border-none px-6 py-4 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/5 outline-none transition-all font-bold text-gray-900 shadow-inner" 
                     placeholder="John Doe" 
@@ -57,6 +94,7 @@ const ContactSection = () => {
                 <div className="relative group/input">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1 mb-2 block group-focus-within/input:text-blue-600 transition-colors">Email Address</label>
                   <input 
+                    required
                     type="email" 
                     className="w-full bg-gray-50 border-none px-6 py-4 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/5 outline-none transition-all font-bold text-gray-900 shadow-inner" 
                     placeholder="john@example.com" 
@@ -65,6 +103,7 @@ const ContactSection = () => {
                 <div className="relative group/input">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1 mb-2 block group-focus-within/input:text-blue-600 transition-colors">Mobile Number</label>
                   <input 
+                    required
                     type="tel" 
                     className="w-full bg-gray-50 border-none px-6 py-4 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/5 outline-none transition-all font-bold text-gray-900 shadow-inner" 
                     placeholder="+91 XXXXX XXXXX" 
@@ -75,6 +114,7 @@ const ContactSection = () => {
               <div className="relative group/input">
                 <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1 mb-2 block group-focus-within/input:text-blue-600 transition-colors">Subject</label>
                 <input 
+                  required
                   type="text" 
                   className="w-full bg-gray-50 border-none px-6 py-4 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/5 outline-none transition-all font-bold text-gray-900 shadow-inner" 
                   placeholder="How can we help?" 
@@ -84,6 +124,7 @@ const ContactSection = () => {
               <div className="relative group/input">
                 <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1 mb-2 block group-focus-within/input:text-blue-600 transition-colors">Message</label>
                 <textarea 
+                  required
                   rows="4" 
                   className="w-full bg-gray-50 border-none px-6 py-4 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/5 outline-none transition-all font-bold text-gray-900 shadow-inner resize-none" 
                   placeholder="Write your message here..."
@@ -95,8 +136,17 @@ const ContactSection = () => {
                   <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
                   <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Encrypted Connection</span>
                 </div>
-                <button className="w-full sm:w-auto py-5 px-12 bg-gray-900 hover:bg-blue-600 text-white rounded-3xl font-black text-[10px] uppercase tracking-[0.2em] transition-all shadow-2xl shadow-gray-900/20 active:scale-95 flex items-center justify-center gap-4 group/send cursor-pointer">
-                  Send Message <Send size={16} className="group-hover/send:translate-x-1 group-hover/send:-translate-y-1 transition-transform" />
+                <button 
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto py-5 px-12 bg-gray-900 hover:bg-blue-600 text-white rounded-3xl font-black text-[10px] uppercase tracking-[0.2em] transition-all shadow-2xl shadow-gray-900/20 active:scale-95 flex items-center justify-center gap-4 group/send cursor-pointer disabled:opacity-50 disabled:scale-100"
+                >
+                  {isSubmitting ? (
+                    <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                  ) : (
+                    <>
+                      Send Message <Send size={16} className="group-hover/send:translate-x-1 group-hover/send:-translate-y-1 transition-transform" />
+                    </>
+                  )}
                 </button>
               </div>
             </form>

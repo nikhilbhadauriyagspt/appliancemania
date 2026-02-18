@@ -1,8 +1,25 @@
-import { Search, ArrowRight, Clock, User, Sparkles, Tag, TrendingUp, ChevronRight, Bookmark } from 'lucide-react';
+import { Search, ArrowRight, Clock, User, Sparkles, Tag, TrendingUp, ChevronRight, Bookmark, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsSubmitting(true);
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setIsSuccess(true);
+      setEmail('');
+      setTimeout(() => setIsSuccess(false), 5000);
+    }, 1500);
+  };
 
   const categories = ['All', 'Smart Tech', 'Maintenance', 'DIY Guides', 'Sustainability', 'Company News'];
 
@@ -183,6 +200,19 @@ const Blog = () => {
 
         {/* 4. Newsletter Banner */}
         <div className="relative rounded-[56px] overflow-hidden bg-gray-900 px-8 py-16 md:p-20 text-center">
+          {/* Success Toast */}
+          <div className={`fixed bottom-8 right-8 z-[100] transition-all duration-500 transform ${isSuccess ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0 pointer-events-none'}`}>
+            <div className="bg-white text-gray-900 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4 border border-gray-100">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
+                <CheckCircle2 size={20} />
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="text-xs font-black uppercase tracking-widest">Subscription Successful!</span>
+                <span className="text-[10px] font-medium text-gray-400">Welcome to the Repair Journal.</span>
+              </div>
+            </div>
+          </div>
+
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/4" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/20 blur-[100px] rounded-full translate-y-1/3 -translate-x-1/4" />
           
@@ -192,17 +222,22 @@ const Blog = () => {
               Master Your Home.
             </h2>
           
-            
-            <div className="flex flex-col sm:flex-row gap-3 p-2 bg-white/10 backdrop-blur-xl border border-white/10 rounded-[28px] shadow-2xl">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 p-2 bg-white/10 backdrop-blur-xl border border-white/10 rounded-[28px] shadow-2xl">
               <input 
+                required
                 type="email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address" 
                 className="flex-1 bg-transparent border-none px-6 py-4 text-white font-bold placeholder:text-gray-500 outline-none text-sm"
               />
-              <button className="px-8 py-4 bg-white text-gray-900 rounded-[20px] font-black text-xs uppercase tracking-widest hover:bg-blue-500 hover:text-white transition-all active:scale-95 shadow-lg">
-                Subscribe
+              <button 
+                disabled={isSubmitting}
+                className="px-8 py-4 bg-white text-gray-900 rounded-[20px] font-black text-xs uppercase tracking-widest hover:bg-blue-500 hover:text-white transition-all active:scale-95 shadow-lg disabled:opacity-50"
+              >
+                {isSubmitting ? '...' : 'Subscribe'}
               </button>
-            </div>
+            </form>
             <p className="mt-6 text-[9px] text-gray-500 font-bold uppercase tracking-widest">No spam. Unsubscribe anytime.</p>
           </div>
         </div>

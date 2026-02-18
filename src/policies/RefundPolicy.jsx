@@ -64,9 +64,12 @@ const RefundPolicy = () => {
             <p>
               If you have any questions concerning our refund policy, please contact us at:
             </p>
-            <div className="bg-primary text-white p-8 rounded-2xl shadow-xl mt-4 text-center">
-              <a href="mailto:support@appliancenerdy.shop" className="text-secondary font-bold text-lg hover:underline">support@appliancenerdy.shop</a>
-            </div>
+            <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold">
+              APPLIANCENERDY<br />
+              128 E Pacific Coast Hwy, Long Beach, CA 90813, USA<br />
+              United States<br />
+              Email: <a href="mailto:support@appliancenerdy.shop" className="text-primary hover:underline">support@appliancenerdy.shop</a>
+            </address>
           </section>
         </div>
       </div>

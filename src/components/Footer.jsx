@@ -1,8 +1,26 @@
-import { Wrench, Mail, MapPin, ArrowUpRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { Wrench, Mail, MapPin, ArrowUpRight, ShieldCheck, Sparkles, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) return;
+    
+    setIsSubmitting(true);
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setIsSuccess(true);
+      setEmail('');
+      setTimeout(() => setIsSuccess(false), 5000);
+    }, 1000);
+  };
 
   const footerLinks = {
     company: [
@@ -65,16 +83,33 @@ const Footer = () => {
                     </div>
                     <p className="text-gray-500 text-sm font-medium">Get the latest repair tips and exclusive offers.</p>
                   </div>
-                  <div className="w-full md:w-auto flex p-1.5 bg-gray-50 border border-gray-100 rounded-2xl">
-                    <input 
-                      type="email" 
-                      placeholder="Your email" 
-                      className="bg-transparent px-4 py-3 text-gray-900 text-sm font-bold outline-none flex-grow min-w-[150px] placeholder:text-gray-400"
-                    />
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all cursor-pointer shadow-lg shadow-blue-600/20">
-                      Join
-                    </button>
-                  </div>
+                  <form onSubmit={handleSubscribe} className="w-full md:w-auto">
+                    <div className="flex p-1.5 bg-gray-50 border border-gray-100 rounded-2xl relative">
+                      <input 
+                        required
+                        type="email" 
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Your email" 
+                        className="bg-transparent px-4 py-3 text-gray-900 text-sm font-bold outline-none flex-grow min-w-[150px] placeholder:text-gray-400"
+                      />
+                      <button 
+                        disabled={isSubmitting}
+                        type="submit"
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all cursor-pointer shadow-lg shadow-blue-600/20 disabled:opacity-50"
+                      >
+                        {isSubmitting ? '...' : 'Join'}
+                      </button>
+
+                      {/* Inline Success Message */}
+                      {isSuccess && (
+                        <div className="absolute -bottom-10 left-0 right-0 text-center md:text-left flex items-center gap-2 text-emerald-600 animate-in fade-in slide-in-from-top-2 duration-300">
+                          <CheckCircle2 size={14} />
+                          <span className="text-[10px] font-black uppercase tracking-widest">Subscribed Successfully!</span>
+                        </div>
+                      )}
+                    </div>
+                  </form>
                </div>
             </div>
           </div>
