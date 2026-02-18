@@ -63,7 +63,7 @@ const Header = () => {
               <div className="bg-gradient-to-br from-blue-500 to-blue-700 p-2 rounded-xl group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-blue-500/20"><Wrench className="text-white" size={18} /></div>
               <div className="flex flex-col leading-none">
                 <span className="text-lg font-black tracking-tighter text-gray-900 uppercase">APPLIANCE<span className="text-blue-600">NERDY</span></span>
-                <span className="text-[7px] font-black tracking-[0.2em] text-blue-500/80 uppercase">Premium Repair</span>
+                <span className="text-[7px] font-black tracking-[0.2em] text-blue-500/80 uppercase">Premium Repair Services</span>
               </div>
             </Link>
           </div>
@@ -71,6 +71,7 @@ const Header = () => {
           <div className="flex items-center gap-3 ml-auto">
             <nav className="hidden lg:flex items-center gap-1 bg-white/40 border border-white/60 px-1.5 py-1 rounded-full shadow-inner">
               <Link to="/" className={getLinkClass('/')}>Home</Link>
+              <Link to="/about" className={getLinkClass('/about')}>About</Link>
               <div className="relative group" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)}>
                 <button className={`flex items-center gap-1 text-[11px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full transition-all duration-300 cursor-pointer ${isDropdownOpen ? 'text-blue-600 bg-white/50' : 'text-gray-500 hover:text-blue-600 hover:bg-white/50'}`}>Services<ChevronDown size={12} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} /></button>
                 <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ${isDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
@@ -101,7 +102,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <Link to="/about" className={getLinkClass('/about')}>About</Link><Link to="/blog" className={getLinkClass('/blog')}>Blog</Link><Link to="/contact" className={getLinkClass('/contact')}>Contact</Link>
+              <Link to="/blog" className={getLinkClass('/blog')}>Blog</Link><Link to="/contact" className={getLinkClass('/contact')}>Contact</Link>
             </nav>
 
             <div className="flex items-center gap-2 relative z-[70]"><button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-2xl transition-all duration-300 border ${isMenuOpen ? 'bg-gray-900 text-white border-gray-900' : 'bg-white/50 text-gray-900 border-white'}`}>{isMenuOpen ? <X size={20} /> : <Menu size={20} />}</button></div>
