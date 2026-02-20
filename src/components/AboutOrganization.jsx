@@ -58,7 +58,7 @@ const AboutOrganization = () => {
             <div className="relative">
               {/* Primary Image with High-End Border */}
               <div className="relative z-10 rounded-[60px] md:rounded-[100px] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.12)] border-[12px] border-white aspect-[4/5] sm:aspect-square lg:aspect-[4/5]">
-                <img loading="lazy" src="/about.jpg" alt="Professional Workshop" className="w-full h-full object-cover" />
+                <img loading="lazy" src="/Kitchen.jpg" alt="Professional Workshop" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-gray-950/20 via-transparent to-transparent" />
               </div>
 
