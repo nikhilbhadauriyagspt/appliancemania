@@ -43,7 +43,7 @@ const ServiceLayout = ({ title, desc, longDesc, icon, image, extraContent }) => 
           <div className="px-6 py-16 lg:p-24 max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none mb-16">
               <div className="relative mb-16 border-l-2 border-emerald-500 pl-10">
-                <p className="text-xl lg:text-2xl font-semibold text-gray-800 leading-relaxed tracking-tight capitalize">
+                <p className="text-xl lg:text-2xl font-semibold text-gray-800 leading-relaxed tracking-tight first-letter:uppercase">
                   {longDesc}
                 </p>
               </div>
@@ -163,7 +163,7 @@ const ServiceLayout = ({ title, desc, longDesc, icon, image, extraContent }) => 
           color: #6b7280;
           line-height: 1.8;
           font-size: 0.95rem;
-          text-transform: capitalize;
+          text-transform: none;
           letter-spacing: 0.025em;
           font-weight: 600;
         }
