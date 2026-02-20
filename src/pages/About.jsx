@@ -39,16 +39,6 @@ const About = () => {
               <div className="relative aspect-[3/4] rounded-[40px] overflow-hidden shadow-2xl group">
                 <img loading="lazy" src="/about-main.jpg" alt="Team" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 to-transparent" />
-                
-                <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl text-white">
-                  <div className="flex justify-between items-end">
-                    <div>
-                      <div className="text-3xl font-black mb-1">9+ Years</div>
-                      <div className="text-[10px] uppercase tracking-widest opacity-80">Of Expertise</div>
-                    </div>
-                    <Award size={32} className="text-amber-400" />
-                  </div>
-                </div>
               </div>
               
               {/* Decorative elements */}
