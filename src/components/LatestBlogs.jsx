@@ -1,39 +1,13 @@
 import { ArrowRight, Calendar, Sparkles, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { blogPosts } from '../blogData';
 
 const LatestBlogs = () => {
-  const posts = [
-    {
-      id: 1,
-      entry: "01",
-      title: "5 Signs Your Washing Machine Needs Service",
-      excerpt: "Don't wait for a flood. Learn how to spot early warning signs of failure.",
-      category: "Maintenance",
-      date: "Feb 15, 2026",
-      read: "5 Min",
-      image: "/washing.png"
-    },
-    {
-      id: 2,
-      entry: "02",
-      title: "Why Your Refrigerator Is Making Strange Noises",
-      excerpt: "Strange sounds can mean many things. Here is a diagnostic guide.",
-      category: "Kitchen",
-      date: "Feb 10, 2026",
-      read: "6 Min",
-      image: "/refrigerator.png"
-    },
-    {
-      id: 3,
-      entry: "03",
-      title: "Ultimate Guide to AC Deep Cleaning for Summer",
-      excerpt: "Ensure your split AC is clean, gassed, and running efficiently.",
-      category: "HVAC",
-      date: "Feb 05, 2026",
-      read: "7 Min",
-      image: "/air.jpg"
-    }
-  ];
+  const posts = blogPosts.slice(0, 3).map((post, idx) => ({
+    ...post,
+    entry: `0${idx + 1}`,
+    read: post.readTime
+  }));
 
   return (
     <section className="py-24 md:py-32 bg-white relative overflow-hidden" id="insights">
@@ -69,11 +43,6 @@ const LatestBlogs = () => {
               <div className="relative h-[300px] rounded-[48px] overflow-hidden shadow-2xl border-4 border-white transition-all duration-700 group-hover:-translate-y-4 group-hover:shadow-[0_40px_80px_rgba(0,0,0,0.1)]">
                 <img loading="lazy" src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950/40 via-transparent to-transparent" />
-                
-                {/* Float Category */}
-                <div className="absolute top-8 right-8 px-5 py-2 bg-white/90 backdrop-blur-md rounded-full text-[9px] font-black uppercase text-emerald-600 tracking-[0.2em] border border-white/50">
-                  {post.category}
-                </div>
                 
                 {/* Float Entry ID */}
                 <div className="absolute top-8 left-8 text-3xl font-black text-white/20 italic group-hover:text-white transition-colors">

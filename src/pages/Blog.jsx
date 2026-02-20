@@ -59,9 +59,6 @@ const Blog = () => {
             <Link key={post.id} to={`/blog/${post.id}`} className="group flex flex-col bg-white rounded-[32px] p-5 border border-gray-100 hover:border-emerald-100 hover:shadow-2xl transition-all duration-500">
               <div className="relative aspect-[4/3] rounded-[24px] overflow-hidden mb-6">
                 <img src={post.image} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt={post.title} />
-                <div className="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-[8px] font-black uppercase text-emerald-600 border border-white/50">
-                  {post.category}
-                </div>
               </div>
               <div className="flex flex-col flex-grow px-2">
                 <div className="flex items-center gap-3 text-[9px] font-black text-gray-400 uppercase tracking-widest mb-4">

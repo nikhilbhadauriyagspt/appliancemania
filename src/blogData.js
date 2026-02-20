@@ -1,125 +1,209 @@
 export const blogPosts = [
   {
     id: 1,
-    title: "5 Signs Your Washing Machine Needs Professional Service",
-    excerpt: "Don't wait for a flood. Learn how to spot early warning signs of failure.",
+    title: "The Ultimate Guide to Home Appliance Maintenance: Save Money and Extend Lifespan",
+    excerpt: "Learn how to maintain your major home appliances, prevent breakdowns, and extend their lifespan with proper care.",
     content: `
-      <p>A washing machine is one of the hardest-working appliances in any home. From daily laundry loads to heavy bedding washes, it handles a lot of wear and tear. While minor issues can sometimes be fixed with basic checks, certain warning signs indicate it’s time to call a professional appliance repair. Ignoring these symptoms can lead to bigger repairs—or even complete machine failure. Here are five clear signs your washing machine needs professional service.</p>
+      <p>Home appliances are essential to modern living. From refrigerators and washing machines to air conditioners and dishwashers, these machines simplify daily tasks and improve comfort. However, many homeowners ignore regular maintenance until something breaks down — and that’s when repair costs become expensive.</p>
       
-      <h3>1. Excessive Noise or Violent Vibrations</h3>
-      <p>Some level of sound during operation is normal. However, if your washer starts making loud banging, grinding, or screeching noises—especially during the spin cycle—it’s a red flag. Unusual vibrations that cause the machine to “walk” across the floor are also concerning. These issues may be caused by worn drum bearings, a faulty motor, or damaged suspension components. A trained appliance repair can diagnose the exact cause and prevent further internal damage.</p>
+      <p>The good news? Most appliance problems are preventable with proper care. In this ultimate guide, we’ll explain how to maintain your major home appliances, prevent breakdowns, and extend their lifespan.</p>
       
-      <h3>2. Water Leaks Around the Machine</h3>
-      <p>Water pooling around your washing machine is never a good sign. Leaks may result from cracked hoses, worn door seals, or internal pump issues. While tightening a loose hose might solve a minor problem, persistent leaks often indicate deeper mechanical concerns. Continuous leakage can damage your flooring and create mold risks, so professional inspection is highly recommended.</p>
+      <h3>Why Regular Appliance Maintenance Matters</h3>
+      <p>Regular maintenance:</p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Prevents unexpected breakdowns</li>
+        <li>Improves energy efficiency</li>
+        <li>Reduces repair costs</li>
+        <li>Extends appliance lifespan</li>
+        <li>Keeps manufacturer warranty valid</li>
+        <li>Improves safety</li>
+      </ul>
+      <p>Neglecting maintenance can cause minor issues to turn into major repairs.</p>
       
-      <h3>3. Drum Not Spinning Properly</h3>
-      <p>If your clothes come out soaking wet after a full cycle, the drum may not be spinning correctly. This could be due to a broken drive belt, motor malfunction, or control board failure. Attempting DIY repairs on these components can be risky and may void warranties. Professional service ensures the correct parts are replaced and the machine is calibrated properly.</p>
+      <h3>Refrigerator Maintenance Tips</h3>
+      <p>Your refrigerator runs 24/7, making it one of the hardest-working appliances in your home.</p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li><strong>Clean Condenser Coils:</strong> Dust buildup reduces cooling efficiency and increases electricity usage. Clean coils every 6 months.</li>
+        <li><strong>Check Door Seals:</strong> Loose or cracked seals allow cold air to escape. Test by placing paper in the door — if it slips easily, replace the seal.</li>
+        <li><strong>Maintain Proper Temperature:</strong> Fridge: 37–40°F | Freezer: 0°F. Incorrect temperature increases energy bills.</li>
+        <li><strong>Avoid Overloading:</strong> Air circulation is important. Overfilling restricts airflow and affects cooling.</li>
+      </ul>
       
-      <h3>4. Foul Odors That Won’t Go Away</h3>
-      <p>A slight musty smell can sometimes be resolved by cleaning the drum and running a hot wash cycle with vinegar or a cleaning solution. However, persistent foul odors may indicate mold buildup inside hidden components, clogged drain lines, or pump issues. A professional appliance repair can thoroughly clean and inspect internal parts that are not easily accessible to homeowners.</p>
+      <h3>Washing Machine Care</h3>
+      <p>Washing machines deal with water, detergent, and heavy loads daily.</p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li><strong>Avoid Overloading:</strong> Overloading damages the motor and drum bearings.</li>
+        <li><strong>Use Correct Detergent:</strong> High-efficiency (HE) machines require HE detergent.</li>
+        <li><strong>Clean the Drum Monthly:</strong> Run an empty hot cycle with vinegar or washing machine cleaner.</li>
+        <li><strong>Check Hoses:</strong> Inspect water hoses every 6 months for cracks or bulges.</li>
+      </ul>
       
-      <h3>5. Error Codes and Frequent Cycle Interruptions</h3>
-      <p>Modern washing machines come equipped with digital displays that show error codes when something goes wrong. If your washer frequently stops mid-cycle or displays unfamiliar error messages, it could point to sensor failures, electrical issues, or control board problems. Ignoring these codes can worsen the problem. Professional servicing ensures accurate diagnosis using proper tools and expertise.</p>
+      <h3>Air Conditioner Maintenance</h3>
+      <p>AC units require seasonal maintenance.</p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li><strong>Clean or Replace Filters:</strong> Dirty filters restrict airflow and increase electricity consumption.</li>
+        <li><strong>Check Outdoor Unit:</strong> Remove debris, leaves, and dust around the condenser.</li>
+        <li><strong>Annual Professional Service:</strong> Have an appliance repair check refrigerant levels and internal components once a year.</li>
+      </ul>
       
-      <h3>Why Professional Service Matters</h3>
-      <p>Washing machines are complex appliances with electrical, mechanical, and plumbing components working together. Professional appliance repairs have the experience to safely diagnose and repair problems without causing additional damage. Regular maintenance can also extend the lifespan of your appliance and improve energy efficiency.</p>
+      <h3>Dishwasher Maintenance</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li><strong>Clean the Filter:</strong> Food particles block drainage.</li>
+        <li><strong>Inspect Spray Arms:</strong> Remove debris from spray holes.</li>
+        <li><strong>Run Vinegar Cycle:</strong> Once a month to remove odor and limescale.</li>
+      </ul>
       
-      <p>If you notice any of these warning signs, don’t wait until the machine completely breaks down. Timely professional service can save you money, prevent inconvenience, and keep your laundry routine running smoothly.</p>
+      <h3>Microwave Maintenance</h3>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Keep interior clean</li>
+        <li>Don’t run empty</li>
+        <li>Avoid metal objects</li>
+        <li>Clean door seals regularly</li>
+      </ul>
+      
+      <h3>Warning Signs You Should Not Ignore</h3>
+      <p>Call an appliance repair if you notice:</p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Strange noises</li>
+        <li>Burning smell</li>
+        <li>Water leakage</li>
+        <li>Sudden increase in electricity bill</li>
+        <li>Inconsistent performance</li>
+      </ul>
+      <p>Early repair prevents costly damage.</p>
+      
+      <h3>DIY vs Professional Repairs</h3>
+      <p>Small issues like cleaning filters are DIY-friendly. Electrical or internal mechanical issues require professional help. Never attempt complex repairs without proper knowledge.</p>
+      
+      <h3>Final Thoughts</h3>
+      <p>Appliance maintenance is not expensive — but ignoring it is. Regular cleaning, proper usage, and annual servicing can extend your appliance lifespan by years. Taking proactive steps today can save hundreds or even thousands in repair or replacement costs. Invest in maintenance, and your appliances will reward you with long-lasting performance.</p>
     `,
-    category: "Maintenance",
+
     author: "Elena Rodriguez",
-    date: "Feb 15, 2026",
+    date: "Feb 21, 2026",
     readTime: "5 min",
-    image: "/washing.png"
-  },
-  {
-    id: 2,
-    title: "Why Your Refrigerator Is Making Strange Noises",
-    excerpt: "Strange sounds can mean many things. Here is a diagnostic guide.",
-    content: `
-      <p>Refrigerators are designed to run quietly in the background, so when you suddenly hear buzzing, rattling, clicking, or knocking sounds, it can be alarming. While some noises are completely normal, others may indicate that your appliance needs attention. Understanding the difference can help you decide whether it’s a minor issue or time to call a professional.</p>
-      
-      <h3>1. Buzzing or Humming Sounds</h3>
-      <p>A low humming sound is normal, especially when the compressor is running. However, if the buzzing becomes louder than usual or constant, it may signal a problem with the compressor or condenser fan. Dust buildup around the condenser coils can also make the fridge work harder, causing unusual noise. Cleaning the coils may help, but persistent buzzing should be checked by a appliance repair.</p>
-      
-      <h3>2. Clicking Noises</h3>
-      <p>Occasional clicking is normal when the thermostat turns the compressor on or off. But repeated clicking without the fridge starting properly could indicate a faulty start relay or compressor issue. If the fridge struggles to maintain cooling along with clicking sounds, professional servicing is recommended.</p>
-      
-      <h3>3. Rattling or Vibrating</h3>
-      <p>Rattling often happens when the refrigerator isn’t placed evenly on the floor. Check if it’s level and adjust the legs if needed. Loose drain pans or items stored on top of the fridge can also cause vibrations. However, if the noise continues from inside the unit, it may involve the evaporator fan or internal components that need repair.</p>
-      
-      <h3>4. Gurgling or Water Flow Sounds</h3>
-      <p>Gurgling noises are usually harmless. They occur when refrigerant flows through the cooling lines or when water drains during the defrost cycle. These sounds are generally normal and not a cause for concern unless accompanied by poor cooling performance.</p>
-      
-      <h3>5. Knocking or Banging</h3>
-      <p>Loud knocking or banging sounds are not typical. These may indicate problems with the compressor mounts or internal fan blades hitting something. Ignoring these noises could lead to more serious mechanical damage over time.</p>
-      
-      <h3>When to Call a Professional</h3>
-      <p>If the strange noise is accompanied by any of the following issues, it’s best to schedule a professional inspection:</p>
-      <ul className="list-disc pl-6 space-y-2">
-        <li>The fridge isn’t cooling properly</li>
-        <li>Food spoils faster than usual</li>
-        <li>The appliance frequently turns on and off</li>
-        <li>You notice burning smells</li>
-      </ul>
-      
-      <p>Refrigerators contain complex electrical and mechanical systems. Attempting DIY repairs on components like compressors or fans can be risky and costly if done incorrectly.</p>
-      
-      <p>Not all refrigerator noises mean trouble—some are simply part of normal operation. But if the sounds are loud, persistent, or affecting performance, it’s better to address the issue early. Timely professional service can prevent breakdowns, extend the life of your appliance, and ensure your food stays fresh and safe.</p>
-    `,
-    category: "Kitchen",
-    author: "Marcus Chen",
-    date: "Feb 10, 2026",
-    readTime: "6 min",
-    image: "/refrigerator.png"
-  },
-  {
-    id: 3,
-    title: "Ultimate Guide to AC Deep Cleaning for Summer",
-    excerpt: "Ensure your split AC is clean, gassed, and running efficiently.",
-    content: `
-      <p>As summer temperatures rise, your air conditioner becomes the most important appliance in your home. But if your AC hasn’t been cleaned properly, it may struggle to cool efficiently, consume more electricity, and even circulate dust and allergens. A thorough AC deep cleaning before peak summer ensures powerful cooling, better air quality, and lower energy bills.</p>
-      
-      <h3>Why AC Deep Cleaning Is Important</h3>
-      <p>Over time, dust, dirt, mold, and debris accumulate inside your AC unit. Dirty filters and clogged coils reduce airflow, forcing the system to work harder. This leads to:</p>
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Reduced cooling performance</li>
-        <li>Higher electricity consumption</li>
-        <li>Bad odors from vents</li>
-        <li>Increased wear and tear</li>
-        <li>Poor indoor air quality</li>
-      </ul>
-      
-      <h3>Step 1: Turn Off Power Supply</h3>
-      <p>Before starting any cleaning process, always switch off the AC and disconnect the power supply. Safety should be your top priority.</p>
-      
-      <h3>Step 2: Clean or Replace Air Filters</h3>
-      <p>Air filters trap dust and allergens. If they are clogged, airflow becomes restricted. Remove the front panel, take out the filters, and wash them gently with mild detergent and water. Let them dry completely before reinstalling.</p>
-      
-      <h3>Step 3: Clean the Evaporator Coils</h3>
-      <p>Evaporator coils inside the indoor unit collect dust and moisture, which can lead to mold buildup. Use a soft brush or vacuum cleaner to remove loose dust. Professional deep cleaning often includes chemical treatment to ensure complete sanitation.</p>
-      
-      <h3>Step 4: Clear the Drain Line</h3>
-      <p>A clogged drain pipe can cause water leakage and foul smells. Check the drain line for blockages and flush it with clean water or mild cleaning solution to ensure water flows freely.</p>
-      
-      <h3>Step 5: Clean the Outdoor Condenser Unit</h3>
-      <p>The outdoor unit collects dirt, leaves, and debris. Gently wash the condenser coils using low-pressure water and ensure proper airflow around the unit. Avoid bending the fins while cleaning.</p>
-      
-      <h3>Signs Your AC Needs Professional Deep Cleaning</h3>
-      <ul className="list-disc pl-6 space-y-2">
-        <li>AC is not cooling properly</li>
-        <li>Strange smells while running</li>
-        <li>Higher electricity bills</li>
-        <li>Water leakage from indoor unit</li>
-        <li>Loud or unusual noises</li>
-      </ul>
-      
-      <p>AC deep cleaning before summer isn’t just about comfort—it’s about efficiency, health, and long-term savings. While basic filter cleaning can be done at home, a professional deep cleaning ensures every internal component is thoroughly serviced. Prepare your AC now so you can enjoy uninterrupted, powerful cooling all summer long.</p>
-    `,
-    category: "HVAC",
-    author: "Dr. Julian Thorne",
-    date: "Feb 05, 2026",
-    readTime: "7 min",
-    image: "/air.jpg"
-  }
+        image: "/about-main.jpg"
+      },
+      {
+        id: 2,
+        title: "10 Common Home Appliance Problems and How to Fix Them",
+        excerpt: "Understanding common problems can help you identify whether you need a quick fix or professional appliance repair.",
+        content: `
+          <p>Appliances make life convenient — until they stop working. Understanding common problems can help you identify whether you need a quick fix or professional appliance repair. Here are 10 common appliance issues and their solutions.</p>
+          
+          <h3>1. Refrigerator Not Cooling</h3>
+          <p><strong>Causes:</strong> Dirty condenser coils, faulty thermostat, or a broken compressor.</p>
+          <p><strong>Solution:</strong> Clean coils first. If cooling doesn't improve, call an appliance repair.</p>
+          
+          <h3>2. Washing Machine Not Draining</h3>
+          <p><strong>Causes:</strong> Clogged drain hose, blocked pump, or a faulty lid switch.</p>
+          <p><strong>Fix:</strong> Check hose for blockage. If pump is damaged, professional appliance repair is required.</p>
+          
+          <h3>3. AC Not Cooling Properly</h3>
+          <p><strong>Causes:</strong> Dirty air filter, low refrigerant, or compressor issue.</p>
+          <p><strong>Solution:</strong> Clean filters. If issue persists, schedule care service.</p>
+          
+          <h3>4. Dishwasher Not Cleaning Dishes</h3>
+          <p><strong>Causes:</strong> Clogged spray arms, dirty filter, or hard water deposits.</p>
+          <p><strong>Fix:</strong> Clean internal parts and run descaling cycle.</p>
+          
+          <h3>5. Oven Not Heating</h3>
+          <p><strong>Causes:</strong> Faulty heating element or temperature sensor issue.</p>
+          <p><strong>Fix:</strong> Electric ovens may need element replacement by an appliance repair.</p>
+          
+          <h3>6. Microwave Not Heating</h3>
+          <p><strong>Cause:</strong> Magnetron failure.</p>
+          <p><strong>Fix:</strong> Professional appliance repair required.</p>
+          
+          <h3>7. Dryer Not Drying Clothes</h3>
+          <p><strong>Causes:</strong> Lint buildup, blocked vent, or heating element issue.</p>
+          <p><strong>Fix:</strong> Clean vent system regularly.</p>
+          
+          <h3>8. Strange Noises from Appliances</h3>
+          <p>Grinding or rattling often indicates loose parts or worn bearings that need professional diagnosis.</p>
+          
+          <h3>9. Water Leakage</h3>
+          <p>Check hoses and connections immediately to prevent water damage.</p>
+          
+          <h3>10. High Electricity Bills</h3>
+          <p>Inefficient appliances consume more energy. Regular care maintenance keeps them running efficiently.</p>
+          
+          <h3>When to Repair vs Replace?</h3>
+          <p><strong>Repair if:</strong> Appliance is under 8 years old and the repair cost is less than 50% of replacement.</p>
+          <p><strong>Replace if:</strong> Frequent breakdowns or high energy usage.</p>
+          
+          <h3>Conclusion</h3>
+          <p>Knowing common problems helps you act quickly. Early action prevents expensive damage and extends appliance life. Always prioritize safety and professional appliance repair when needed.</p>
+        `,
+        author: "Marcus Chen",
+        date: "Feb 21, 2026",
+        readTime: "6 min",
+        image: "/hero-refri.jpg"
+      },
+      {
+        id: 3,
+        title: "Seasonal Appliance Care Checklist: Protect Your Appliances Year-Round",
+        excerpt: "Appliances face different challenges throughout the year. Seasonal maintenance ensures optimal performance and prevents breakdowns.",
+        content: `
+          <p>Appliances face different challenges throughout the year. Seasonal maintenance ensures optimal performance and prevents breakdowns. Following a regular care schedule helps you stay ahead of potential issues.</p>
+          
+          <h3>Spring Maintenance</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>AC Preparation:</strong> Clean filters, check the thermostat, and inspect the outdoor condenser unit.</li>
+            <li><strong>Refrigerator Cleaning:</strong> Perform a deep clean and defrost the freezer to prepare for warmer months.</li>
+          </ul>
+          
+          <h3>Summer Maintenance</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>AC Monitoring:</strong> Ensure proper airflow and cooling efficiency during peak heat.</li>
+            <li><strong>Ice Maker Maintenance:</strong> Clean and sanitize the water line to ensure fresh ice.</li>
+          </ul>
+          
+          <h3>Fall Maintenance</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Heater & HVAC Check:</strong> Test heating systems before winter temperatures arrive.</li>
+            <li><strong>Dryer Vent Cleaning:</strong> Remove lint buildup to prevent fire hazards during heavy laundry seasons.</li>
+          </ul>
+          
+          <h3>Winter Maintenance</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Prevent Frozen Pipes:</strong> Insulate washing machine hoses if they are in unheated areas.</li>
+            <li><strong>Refrigerator Load Management:</strong> The holiday season increases fridge load; ensure proper spacing for airflow.</li>
+          </ul>
+          
+          <h3>Monthly Maintenance Checklist</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Clean appliance surfaces</li>
+            <li>Inspect cords and plugs</li>
+            <li>Listen for unusual noises</li>
+            <li>Check for water leaks</li>
+          </ul>
+          
+          <h3>Annual Maintenance Checklist</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Professional AC servicing</li>
+            <li>Refrigerator coil cleaning</li>
+            <li>Dishwasher descaling</li>
+            <li>Washing machine drum cleaning</li>
+          </ul>
+          
+          <h3>Energy Efficiency Tips</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Use appliances during off-peak hours</li>
+            <li>Keep appliances clean to reduce strain</li>
+            <li>Avoid overloading to maintain efficiency</li>
+            <li>Upgrade to energy-efficient models when possible</li>
+          </ul>
+          
+          <h3>Benefits of Seasonal Care</h3>
+          <p>Fewer breakdowns, lower repair costs, a longer appliance lifespan, and better energy savings are all direct results of consistent maintenance.</p>
+          
+          <h3>Final Thoughts</h3>
+          <p>Seasonal maintenance is a smart investment. Instead of reacting to breakdowns, stay proactive. A simple checklist followed throughout the year ensures your appliances perform efficiently and reliably. Taking care of appliances today means fewer problems tomorrow.</p>
+        `,
+        author: "Dr. Julian Thorne",
+        date: "Feb 21, 2026",
+        readTime: "7 min",
+        image: "/hero-cook.jpg"
+      }
 ];
