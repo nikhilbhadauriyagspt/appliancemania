@@ -228,7 +228,7 @@ const Header = () => {
             >
               Book Appliance Care care
             </button>
-            <a href="tel:+91XXXXXXXXXX" className="w-full py-5 bg-emerald-50 text-emerald-600 rounded-[24px] font-black text-[10px] uppercase tracking-[0.2em] text-center border border-emerald-100">
+            <a href="tel:+15550000000" className="w-full py-5 bg-emerald-50 text-emerald-600 rounded-[24px] font-black text-[10px] uppercase tracking-[0.2em] text-center border border-emerald-100">
               Call Support
             </a>
           </div>

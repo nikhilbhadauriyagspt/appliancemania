@@ -94,7 +94,7 @@ const Blog = () => {
                 type="email" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="EMAIL ADDRESS" 
+                placeholder="email@example.com" 
                 className="flex-1 bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white text-xs font-black uppercase tracking-widest focus:bg-white/10 focus:border-emerald-500 outline-none transition-all"
               />
               <button 

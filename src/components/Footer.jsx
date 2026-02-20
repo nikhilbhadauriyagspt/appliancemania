@@ -88,7 +88,7 @@ const Footer = () => {
                 <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-all">
                   <Mail size={16} />
                 </div>
-                <a href="mailto:info@appliancemania.shop" className="text-xs font-black text-gray-950 hover:text-emerald-600 transition-colors uppercase tracking-tight">info@appliancemania.shop</a>
+                <a href="mailto:info@appliancemania.shop" className="text-xs font-black text-gray-950 hover:text-emerald-600 transition-colors">info@appliancemania.shop</a>
               </div>
               <div className="flex items-start gap-3 group">
                 <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-white transition-all shrink-0">
@@ -153,7 +153,7 @@ const Footer = () => {
                        type="email" 
                        value={email}
                        onChange={(e) => setEmail(e.target.value)}
-                       placeholder="email address" 
+                       placeholder="email@example.com" 
                        className="w-full bg-white border border-gray-100 rounded-xl px-5 py-3 text-gray-950 text-xs font-black uppercase tracking-widest outline-none focus:border-emerald-500 transition-all shadow-sm placeholder:text-gray-300"
                      />
                    </div>

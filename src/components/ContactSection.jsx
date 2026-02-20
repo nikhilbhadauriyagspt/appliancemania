@@ -79,7 +79,7 @@ const ContactSection = () => {
                </div>
                <h3 className="text-xl font-black text-gray-950 mb-2 uppercase tracking-tight">Digital Mail</h3>
                <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mb-6">Expect our response within 2 business hours.</p>
-               <a href="mailto:info@appliancemania.shop" className="text-xl font-black text-emerald-600 hover:text-amber-600 transition-colors uppercase tracking-tighter leading-none">info@appliancemania.shop</a>
+               <a href="mailto:info@appliancemania.shop" className="text-xl font-black text-emerald-600 hover:text-amber-600 transition-colors leading-none">info@appliancemania.shop</a>
             </div>
 
             <div className="p-10 rounded-[48px] bg-gray-50 border border-gray-100 group transition-all duration-700 hover:bg-white hover:shadow-2xl">
@@ -106,7 +106,7 @@ const ContactSection = () => {
                         name="fullName"
                         type="text" 
                         className="w-full bg-gray-50 border-none px-8 py-5 rounded-[24px] focus:bg-white focus:ring-4 focus:ring-emerald-500/5 outline-none transition-all font-black text-gray-950 shadow-inner placeholder:text-gray-300" 
-                        placeholder="Rahul Sharma" 
+                        placeholder="John Smith" 
                       />
                     </div>
                     <div className="relative group/input">
@@ -116,7 +116,7 @@ const ContactSection = () => {
                         name="email"
                         type="email" 
                         className="w-full bg-gray-50 border-none px-8 py-5 rounded-[24px] focus:bg-white focus:ring-4 focus:ring-emerald-500/5 outline-none transition-all font-black text-gray-950 shadow-inner placeholder:text-gray-300" 
-                        placeholder="rahul@example.com" 
+                        placeholder="john@example.com" 
                       />
                     </div>
                     <div className="relative group/input">
@@ -126,7 +126,7 @@ const ContactSection = () => {
                         name="phone"
                         type="tel" 
                         className="w-full bg-gray-50 border-none px-8 py-5 rounded-[24px] focus:bg-white focus:ring-4 focus:ring-emerald-500/5 outline-none transition-all font-black text-gray-950 shadow-inner placeholder:text-gray-300" 
-                        placeholder="+91 XXXXX XXXXX" 
+                        placeholder="+1 (555) 000-0000" 
                       />
                     </div>
                   </div>
