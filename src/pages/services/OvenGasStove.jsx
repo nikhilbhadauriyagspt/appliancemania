@@ -4,55 +4,77 @@ import { Flame } from 'lucide-react';
 const OvenGasStovePage = () => (
   <ServiceLayout 
     title="Oven & Gas Stove"
-    desc="Burner & ignition repair"
-    longDesc="Ensure your kitchen stays safe and functional. We specialize in burner cleaning, electric ignition repair, and thermostat calibration for all premium stove brands."
+    desc="Thermal Calibration & Safety Engineering"
+    longDesc="Precision heat management for the professional home kitchen. We specialize in digital thermostat calibration, high-performance burner cleaning, and leak-proof gas line restoration for all premium cooking ranges."
     icon={<Flame size={24} />}
     image="/Ove.jpg"
     extraContent={
-      <div className="space-y-12">
+      <div className="space-y-16">
         <section>
-          <h2 className="text-3xl font-black text-gray-900 mb-6 uppercase tracking-tight">Precision Cooking & Safety</h2>
-          <p className="text-gray-500 leading-relaxed font-medium">
-            A faulty gas stove or oven is not just a cooking inconvenience; it's a significant safety hazard. Our expert technicians provide comprehensive maintenance and repair for built-in ovens, cooking ranges, and standard gas stoves, ensuring optimal performance and complete peace of mind.
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Controlled Combustion Mastery</h2>
+          <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
+            Cooking appliances require absolute safety protocols. Whether it's an uneven flame or a digital oven control failure, our master technicians utilize electronic gas sniffers and thermal probes to ensure your kitchen remains a safe high-performance environment.
           </p>
         </section>
 
-        <section className="bg-orange-50 p-10 rounded-[40px] border border-orange-100">
-          <h3 className="text-2xl font-black text-orange-900 mb-8 uppercase tracking-tight">Specialized Care for Your Kitchen</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-orange-600 flex-shrink-0">
-                <Flame size={24} />
-              </div>
-              <div>
-                <h4 className="font-black text-gray-900 uppercase text-sm mb-2">Burner Optimization</h4>
-                <p className="text-gray-500 text-sm font-bold">Deep cleaning of clogged burners to restore steady blue flames and fuel efficiency.</p>
-              </div>
+        <section className="bg-gray-950 p-10 md:p-12 rounded-[48px] text-white relative overflow-hidden group shadow-2xl">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-600/10 blur-[60px]" />
+          <h3 className="text-2xl font-black mb-10 uppercase tracking-tight text-white relative z-10">What We Resolve:</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+            <div className="space-y-6">
+              <h4 className="text-emerald-500 font-black uppercase text-[10px] tracking-[0.3em]">Gas & Burner Systems</h4>
+              <ul className="space-y-4">
+                {[
+                  "Burner Port Micro-Cleaning",
+                  "Igniter Electrode Sync",
+                  "Gas Valve Leak Diagnostics",
+                  "Regulator Flow Normalization"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest group/item">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-orange-600 flex-shrink-0">
-                <div className="font-black">⚡</div>
-              </div>
-              <div>
-                <h4 className="font-black text-gray-900 uppercase text-sm mb-2">Ignition Systems</h4>
-                <p className="text-gray-500 text-sm font-bold">Repair and replacement of faulty spark plugs and electronic ignition modules.</p>
-              </div>
+            
+            <div className="space-y-6">
+              <h4 className="text-amber-500 font-black uppercase text-[10px] tracking-[0.3em]">Oven Logic & Heat</h4>
+              <ul className="space-y-4">
+                {[
+                  "Thermostat Sensor Calibration",
+                  "Heating Element Restoration",
+                  "Control Board (PCB) Fix",
+                  "Door Seal & Hinge Tuning"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">Oven & Grill Specialist</h3>
-          <p className="text-gray-500 leading-relaxed font-medium mb-10">
-            From baking inconsistent cakes to thermostat failures, we diagnose and fix complex oven issues. We ensure even heat distribution and precise temperature control for perfect results every time.
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">The Safety Shield</h3>
+          <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
+            We exclusively use original manufacturer seals and thermal-resistant components. Every service includes a mandatory 5-point gas safety check to ensure zero PPM leakage at all connection nodes.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-             {["Thermostat Fix", "Leak Detection", "Door Seal Replace", "Control Knob Fix", "Blower Motor Fix", "Glass Replace"].map((item, idx) => (
-               <div key={idx} className="flex items-center gap-3 p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                  <div className="w-2 h-2 rounded-full bg-orange-600" />
-                  <span className="text-[10px] font-black text-gray-900 uppercase tracking-widest">{item}</span>
-               </div>
-             ))}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { label: "Gas Range", val: "Engineering" },
+              { label: "Built-in Oven", val: "Diagnostics" },
+              { label: "OEM Parts", val: "Guaranteed" },
+              { label: "Safety Run", val: "Deployment" }
+            ].map((item, idx) => (
+              <div key={idx} className="p-6 rounded-[28px] bg-gray-50 border border-gray-100 text-center hover:bg-white hover:shadow-xl transition-all duration-500 group">
+                <div className="text-emerald-600 font-black text-[9px] uppercase mb-2 tracking-[0.2em]">{item.label}</div>
+                <div className="text-gray-950 font-black text-[10px] uppercase tracking-tighter">{item.val}</div>
+              </div>
+            ))}
           </div>
         </section>
       </div>
@@ -61,4 +83,3 @@ const OvenGasStovePage = () => (
 );
 
 export default OvenGasStovePage;
-

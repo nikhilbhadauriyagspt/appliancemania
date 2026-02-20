@@ -4,58 +4,75 @@ import { WashingMachine } from 'lucide-react';
 const WashingMachinePage = () => (
   <ServiceLayout 
     title="Washing Machine"
-    desc="Drum & motor repair"
-    longDesc="Our specialists handle everything from front-load to top-load machines. Whether it's a motor failure, drum noise, or water leakage, we restore your machine to factory performance."
+    desc="Precision Drum & Motor Engineering"
+    longDesc="Our master technicians specialize in complete restoration for both front-load and top-load systems. From complex logic board failures to mechanical drum vibrations, we ensure factory-grade performance with every fix."
     icon={<WashingMachine size={24} />}
     image="/washing.png"
     extraContent={
-      <div className="space-y-12">
+      <div className="space-y-16">
         <section>
-          <h2 className="text-3xl font-black text-gray-900 mb-6 uppercase tracking-tight">Expert Laundry Solutions</h2>
-          <p className="text-gray-500 leading-relaxed font-medium">
-            A broken washing machine can disrupt your entire household routine. From minor leaks to major motor failures, our team provides comprehensive repair services for all types of washing machines, including semi-automatic, fully-automatic top-load, and front-load models.
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Expert Laundry Solutions</h2>
+          <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
+            A malfunctioning washing machine disrupts the essential rhythm of your home. Our diagnostic process identifies the root cause of leaks, motor failures, and drainage issues across all premium models, including top-load and high-efficiency front-load units.
           </p>
         </section>
 
-        <section className="bg-gray-900 p-10 rounded-[40px] text-white">
-          <h3 className="text-2xl font-black mb-6 uppercase tracking-tight">What We Fix:</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <h4 className="text-blue-500 font-black uppercase text-sm">Mechanical Issues</h4>
-              <ul className="space-y-2 text-gray-400 font-bold text-sm">
-                <li>• Drum not spinning or rotating</li>
-                <li>• Excessive vibration or noise</li>
-                <li>• Door latch or seal replacement</li>
-                <li>• Belt and pulley repairs</li>
+        <section className="bg-gray-950 p-10 md:p-12 rounded-[48px] text-white relative overflow-hidden group shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 blur-[80px] -mr-32 -mt-32" />
+          <h3 className="text-2xl font-black mb-10 uppercase tracking-tight text-white relative z-10">What We Resolve:</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+            <div className="space-y-6">
+              <h4 className="text-emerald-500 font-black uppercase text-[10px] tracking-[0.3em]">Mechanical Systems</h4>
+              <ul className="space-y-4">
+                {[
+                  "Drum & Bearing Restoration",
+                  "Vibration & Suspension Tuning",
+                  "Seal & Gasket Replacement",
+                  "Transmission & Belt Repair"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest group/item">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
-            <div className="space-y-4">
-              <h4 className="text-blue-500 font-black uppercase text-sm">Electrical & Water</h4>
-              <ul className="space-y-2 text-gray-400 font-bold text-sm">
-                <li>• Control board (PCB) troubleshooting</li>
-                <li>• Water inlet valve replacement</li>
-                <li>• Drainage pump clearing & fix</li>
-                <li>• Heating element replacement</li>
+            
+            <div className="space-y-6">
+              <h4 className="text-amber-500 font-black uppercase text-[10px] tracking-[0.3em]">Control & Electronics</h4>
+              <ul className="space-y-4">
+                {[
+                  "logic board (PCB) Diagnostics",
+                  "Pressure Switch Calibration",
+                  "Drainage Pump Extraction",
+                  "Thermal Regulation Repair"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">Our Promise of Quality</h3>
-          <p className="text-gray-500 leading-relaxed font-medium mb-8">
-            We understand the value of your appliance. That's why we only use genuine spare parts and provide a transparent pricing model. Our technicians undergo rigorous training to stay updated with the latest technology from brands like Samsung, LG, Whirlpool, and Bosch.
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Technical Quality Assurance</h3>
+          <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
+            Every component we use is a 100% original manufacturer spare. Our engineers undergo rigorous multi-point training to maintain technical superiority across brands like Samsung, LG, and Bosch.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Top Load", val: "Expertise" },
-              { label: "Front Load", val: "Specials" },
-              { label: "Original", val: "Spare Parts" },
-              { label: "Same Day", val: "Service" }
+              { label: "Top Load", val: "Engineering" },
+              { label: "Front Load", val: "Diagnostics" },
+              { label: "OEM Parts", val: "Guaranteed" },
+              { label: "Rapid Sync", val: "Deployment" }
             ].map((item, idx) => (
-              <div key={idx} className="p-4 rounded-2xl bg-gray-50 border border-gray-100 text-center">
-                <div className="text-blue-600 font-black text-xs uppercase mb-1">{item.label}</div>
-                <div className="text-gray-900 font-black text-[10px] uppercase tracking-widest">{item.val}</div>
+              <div key={idx} className="p-6 rounded-[28px] bg-gray-50 border border-gray-100 text-center hover:bg-white hover:shadow-xl transition-all duration-500 group">
+                <div className="text-emerald-600 font-black text-[9px] uppercase mb-2 tracking-[0.2em]">{item.label}</div>
+                <div className="text-gray-950 font-black text-[10px] uppercase tracking-tighter">{item.val}</div>
               </div>
             ))}
           </div>
@@ -66,4 +83,3 @@ const WashingMachinePage = () => (
 );
 
 export default WashingMachinePage;
-

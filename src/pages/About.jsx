@@ -1,179 +1,216 @@
-import { ShieldCheck, Clock, Award, Users, CheckCircle2, ArrowRight, ChevronDown, Search } from 'lucide-react';
+import { ShieldCheck, Clock, Award, Users, CheckCircle2, ArrowRight, ChevronDown, Search, Sparkles, Zap, Target, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const About = () => {
-  const [showProcess, setShowProcess] = useState(false);
-
   return (
-    <div className="pt-24 pb-0 bg-white min-h-screen">
+    <div className="bg-white min-h-screen selection:bg-emerald-500 selection:text-white">
       
-      {/* 1. Hero Section - Clean & Direct */}
-      <section className="py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4 block">About APPLIANCENERDY</span>
-              <h1 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight mb-8">
-                Your Trusted Partner in <br />
-                <span className="text-blue-600">Appliance Care.</span>
+      {/* 1. Avant-Garde Hero Section */}
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div className="absolute top-0 right-0 w-3/4 h-full bg-gray-50 rounded-bl-[100px] -z-10" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div className="lg:col-span-7 relative z-10">
+              <div className="inline-flex items-center gap-3 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm mb-8">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-900">Since 2026</span>
+              </div>
+              
+              <h1 className="text-4xl lg:text-6xl font-black text-gray-950 leading-[0.9] tracking-tighter mb-8">
+                Restoring <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-400">Harmony</span> To <br />
+                Your Home.
               </h1>
-              <p className="text-gray-500 text-lg leading-relaxed mb-8 max-w-xl">
-                Founded in 2026, we have been dedicated to providing top-tier appliance repair services. We believe in quality, transparency, and the long-term reliability of your home equipment.
+              
+              <p className="text-gray-500 text-lg font-medium leading-relaxed max-w-xl mb-10 border-l-4 border-amber-500 pl-6">
+                Founded in 2026, APPLIANCEMANIA has redefined appliance care. We believe in quality, transparency, and the long-term reliability of your home equipment.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-bold text-sm hover:bg-blue-600 transition-all shadow-lg">
-                  Get in Touch
+
+              <div className="flex items-center gap-6">
+                <Link to="/contact" className="group px-8 py-4 bg-gray-950 text-white rounded-xl font-black text-xs uppercase tracking-[0.2em] hover:bg-emerald-600 transition-all shadow-xl active:scale-95 flex items-center gap-3">
+                  Get in Touch <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <div className="flex items-center gap-2 px-6 py-4 bg-gray-50 rounded-xl">
-                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                  <span className="text-xs font-bold text-gray-600 uppercase tracking-wider">Certified Technicians</span>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 relative">
+              <div className="relative aspect-[3/4] rounded-[40px] overflow-hidden shadow-2xl group">
+                <img loading="lazy" src="/about-main.jpg" alt="Team" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 to-transparent" />
+                
+                <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl text-white">
+                  <div className="flex justify-between items-end">
+                    <div>
+                      <div className="text-3xl font-black mb-1">9+ Years</div>
+                      <div className="text-[10px] uppercase tracking-widest opacity-80">Of Mastery</div>
+                    </div>
+                    <Award size={32} className="text-amber-400" />
+                  </div>
                 </div>
               </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -top-12 -right-12 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
             </div>
-            <div className="relative">
-              <div className="rounded-[48px] overflow-hidden shadow-2xl border-8 border-gray-50 bg-gray-100">
-                <img loading="lazy" 
-                  src="/about-main.jpg" 
-                  alt="Our Team" 
-                  className="w-full h-auto object-cover min-h-[400px] lg:min-h-[500px]" 
-                />
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
 
-      {/* 2. Core Values - Simple Grid */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">The Values We Stand By</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">Our commitment to excellence is reflected in every repair we perform and every client we serve.</p>
+      {/* 2. Dark Mode Values Section */}
+      <section className="py-24 bg-gray-950 text-white relative overflow-hidden">
+        {/* Giant Watermark */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-black text-gray-900 select-none pointer-events-none">
+          VALUES
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+            <div>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-4">The Pillars of <br /> <span className="text-emerald-500">Excellence.</span></h2>
+            </div>
+            <p className="text-gray-400 max-w-sm text-sm font-medium leading-relaxed uppercase tracking-wide text-right">
+              Our commitment is reflected in every repair we perform and every client we serve.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ValueCard 
-              icon={<ShieldCheck className="text-blue-600" />}
+            <DarkValueCard 
+              icon={<ShieldCheck size={32} />}
               title="Guaranteed Quality"
-              desc="We use only 100% genuine parts sourced directly from manufacturers to ensure longevity."
+              desc="We use only 100% genuine parts sourced directly from manufacturers."
+              accent="emerald"
             />
-            <ValueCard 
-              icon={<Clock className="text-blue-600" />}
+            <DarkValueCard 
+              icon={<Clock size={32} />}
               title="Timely Response"
-              desc="We value your time. Our technicians aim to reach your doorstep within 60 minutes of booking."
+              desc="Technicians aim to reach your doorstep within 60 minutes of booking."
+              accent="amber"
             />
-            <ValueCard 
-              icon={<Award className="text-blue-600" />}
+            <DarkValueCard 
+              icon={<Zap size={32} />}
               title="Expert Knowledge"
-              desc="Our team undergoes continuous training to stay updated with the latest smart home technologies."
+              desc="Continuous training to stay updated with smart home technologies."
+              accent="emerald"
             />
           </div>
         </div>
       </section>
 
-      {/* 3. Our Commitment Section */}
-      <section className="py-24 bg-white">
+      {/* 3. Commitment "Strip" Section */}
+      <section className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-3xl overflow-hidden shadow-lg h-64 border-4 border-gray-50">
-                  <img loading="lazy" src="/about-child1.jpg" className="w-full h-full object-cover" alt="Detail" />
-                </div>
-                <div className="rounded-3xl overflow-hidden shadow-lg h-64 mt-8 border-4 border-gray-50">
-                  <img loading="lazy" src="/about-child2.jpg" className="w-full h-full object-cover" alt="Detail" />
-                </div>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-6 leading-tight">Our Commitment to <br />Technical Excellence.</h2>
-              <p className="text-gray-500 mb-8 leading-relaxed">
-                At APPLIANCENERDY, we understand that a broken appliance is more than just a minor inconvenience. It's a disruption to your daily routine. That's why our process is designed to be as seamless and efficient as possible.
-              </p>
-              <ul className="space-y-4 mb-10">
-                {['Direct access to original OEM parts', 'Transparent upfront pricing model', '90-Day comprehensive service warranty', 'Fully background-checked technicians'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <CheckCircle2 className="text-blue-600" size={20} />
-                    <span className="text-gray-700 font-bold text-sm uppercase tracking-tight">{item}</span>
-                  </li>
+          <div className="bg-gray-50 rounded-[60px] p-8 md:p-16 flex flex-col lg:flex-row items-center gap-16 overflow-hidden relative">
+            
+            <div className="w-full lg:w-1/2 relative z-10">
+              <span className="text-amber-500 font-black text-[10px] uppercase tracking-[0.3em] mb-4 block">Our Promise</span>
+              <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-8 tracking-tight">Commitment to <br /> Technical Excellence.</h2>
+              
+              <div className="space-y-6">
+                {[
+                  'Direct access to original OEM parts', 
+                  'Transparent upfront pricing model', 
+                  '90-Day comprehensive service warranty', 
+                  'Fully background-checked technicians'
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-emerald-600 shrink-0 shadow-sm">
+                      <CheckCircle2 size={14} />
+                    </div>
+                    <p className="text-sm font-bold text-gray-700 uppercase tracking-wide pt-0.5">{item}</p>
+                  </div>
                 ))}
-              </ul>
-              <button 
-                onClick={() => {
-                  setShowProcess(true);
-                  setTimeout(() => {
-                    document.getElementById('detailed-process')?.scrollIntoView({ behavior: 'smooth' });
-                  }, 100);
-                }}
-                className="group inline-flex items-center gap-4 bg-blue-50 text-blue-600 px-6 py-3 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all active:scale-95 border border-blue-100/50 shadow-sm cursor-pointer"
-              >
-                Learn More About Our Process <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
-              </button>
+              </div>
             </div>
+
+            <div className="w-full lg:w-1/2 relative h-[400px]">
+              <div className="absolute inset-0 grid grid-cols-2 gap-4 transform rotate-3 scale-110">
+                <div className="space-y-4 -mt-12">
+                  <img src="/about-child1.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
+                  <img src="/about-main.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
+                </div>
+                <div className="space-y-4">
+                  <img src="/about-child2.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
+                  <img src="/hero-washing.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* 4. Detailed Process Section - Animated Entrance */}
-      <div className={`transition-all duration-1000 ease-in-out overflow-hidden ${showProcess ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-        <section id="detailed-process" className="py-24 bg-gray-50 overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
-              <span className="text-blue-600 font-black text-[10px] uppercase tracking-[0.3em] mb-4 block">The Journey</span>
-              <h2 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tighter mb-6">Our Repair Journey.</h2>
-              <p className="text-gray-500 max-w-2xl mx-auto font-medium">A step-by-step breakdown of how we ensure your appliances receive the highest level of care.</p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4">
-                <ProcessAccordion 
-                  step="01" 
-                  title="Initial Diagnostics" 
-                  desc="Our technicians use precision tools to identify the root cause of the issue, ensuring we don't just fix symptoms but solve the real problem."
-                  isOpen={true}
-                />
-                <ProcessAccordion 
-                  step="02" 
-                  title="Genuine Parts Sourcing" 
-                  desc="We exclusively use original manufacturer parts. This stage ensures that every component replaced meets the exact specifications of your appliance."
-                />
-                <ProcessAccordion 
-                  step="03" 
-                  title="Precision Repair" 
-                  desc="The actual repair is performed in a controlled manner, following strict safety protocols and technical guidelines for your specific brand."
-                />
-                <ProcessAccordion 
-                  step="04" 
-                  title="Quality Assurance" 
-                  desc="Before we leave, we perform a multi-point test to verify that the appliance is working at peak efficiency and is safe for your family."
-                />
-              </div>
-              <div className="relative">
-                <div className="rounded-[40px] overflow-hidden shadow-2xl border-4 border-white transform lg:rotate-2">
-                  <img loading="lazy" src="/about-child1.jpg" alt="Process" className="w-full h-[500px] object-cover" />
-                  <div className="absolute inset-0 bg-blue-600/10 mix-blend-multiply" />
-                </div>
-                {/* Floating Stat */}
-                <div className="absolute -bottom-6 -left-6 bg-white p-8 rounded-[32px] shadow-xl border border-gray-100 animate-bounce-slow">
-                  <div className="text-3xl font-black text-blue-600 mb-1">100%</div>
-                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-tight">Satisfaction <br /> Rate</div>
-                </div>
-              </div>
-            </div>
+      {/* 4. Vertical Timeline Process */}
+      <section className="py-24 bg-white relative">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-24">
+            <span className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.3em] mb-4 block">The Workflow</span>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-950 tracking-tighter">Our Repair Journey.</h2>
           </div>
-        </section>
-      </div>
 
-      {/* 5. Final Call to Action */}
-      <section className="py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-black text-white mb-8 tracking-tight">Need a Professional Fix?</h2>
-          <p className="text-gray-400 max-w-xl mx-auto mb-12 font-medium">Join thousands of happy customers who trust APPLIANCENERDY for their home appliance maintenance and repairs.</p>
-          <div className="flex justify-center gap-4">
-            <Link to="/contact" className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 active:scale-95">
-              Contact Us Now
-            </Link>
+          <div className="relative">
+            {/* Center Line */}
+            <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-gray-200 md:-translate-x-1/2" />
+
+            <TimelineItem 
+              step="01"
+              title="Initial Diagnostics"
+              desc="Our technicians use precision tools to identify the root cause of the issue, ensuring we don't just fix symptoms but solve the real problem."
+              side="left"
+            />
+            <TimelineItem 
+              step="02"
+              title="Genuine Parts Sourcing"
+              desc="We exclusively use original manufacturer parts. This stage ensures that every component replaced meets the exact specifications of your appliance."
+              side="right"
+            />
+            <TimelineItem 
+              step="03"
+              title="Precision Repair"
+              desc="The actual repair is performed in a controlled manner, following strict safety protocols and technical guidelines for your specific brand."
+              side="left"
+            />
+            <TimelineItem 
+              step="04"
+              title="Quality Assurance"
+              desc="Before we leave, we perform a multi-point test to verify that the appliance is working at peak efficiency and is safe for your family."
+              side="right"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Refined Final CTA */}
+      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative bg-gray-950 rounded-[60px] p-12 md:p-24 overflow-hidden text-center group shadow-2xl">
+            {/* Decorative background effects */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-600/20 blur-[100px] -mr-48 -mt-48 transition-all duration-1000 group-hover:bg-emerald-600/30" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/10 blur-[80px] -ml-32 -mb-32" />
+            
+            <div className="relative z-10 max-w-3xl mx-auto">
+              <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full mb-8">
+                <zap size={14} className="text-amber-500" />
+                <span className="text-[9px] font-black uppercase tracking-[0.3em] text-white/70">Instant Response Available</span>
+              </div>
+
+              <h2 className="text-3xl md:text-5xl font-black text-white mb-8 tracking-tighter uppercase leading-none">
+                Need a <span className="text-emerald-500 italic">Professional</span> Fix?
+              </h2>
+              
+              <p className="text-gray-400 text-sm md:text-base font-medium mb-12 max-w-xl mx-auto uppercase tracking-widest leading-relaxed">
+                Join thousands of happy customers who trust APPLIANCEMANIA for their home appliance maintenance and technical support.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <Link to="/contact" className="w-full sm:w-auto bg-emerald-600 text-white px-12 py-6 rounded-2xl font-black text-[10px] uppercase tracking-[0.25em] hover:bg-white hover:text-gray-950 transition-all shadow-xl shadow-emerald-600/20 active:scale-95 cursor-pointer">
+                  Contact Us Now
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -182,39 +219,27 @@ const About = () => {
   );
 };
 
-const ProcessAccordion = ({ step, title, desc, isOpen: initialOpen = false }) => {
-  const [isOpen, setIsOpen] = useState(initialOpen);
-
-  return (
-    <div className={`p-6 rounded-3xl border transition-all duration-500 ${isOpen ? 'bg-white border-blue-100 shadow-xl' : 'bg-gray-100/50 border-transparent hover:bg-gray-100'}`}>
-      <button 
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between gap-4 text-left cursor-pointer"
-      >
-        <div className="flex items-center gap-4">
-          <span className={`text-sm font-black transition-colors duration-500 ${isOpen ? 'text-blue-600' : 'text-gray-400'}`}>{step}</span>
-          <h3 className="text-lg font-black text-gray-900 tracking-tight">{title}</h3>
-        </div>
-        <ChevronDown size={20} className={`text-gray-400 transition-transform duration-500 ${isOpen ? 'rotate-180 text-blue-600' : ''}`} />
-      </button>
-      <div className={`grid transition-all duration-500 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0 mt-0'}`}>
-        <div className="overflow-hidden">
-          <p className="text-gray-500 text-sm font-medium leading-relaxed border-l-2 border-blue-50 pl-4">
-            {desc}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const ValueCard = ({ icon, title, desc }) => (
-  <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300">
-    <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-8">
+const DarkValueCard = ({ icon, title, desc, accent }) => (
+  <div className={`p-10 rounded-[32px] bg-gray-900 border border-gray-800 transition-all duration-500 hover:-translate-y-2 group ${accent === 'emerald' ? 'hover:shadow-[0_20px_60px_-15px_rgba(16,185,129,0.3)]' : 'hover:shadow-[0_20px_60px_-15px_rgba(245,158,11,0.3)]'}`}>
+    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 transition-colors ${accent === 'emerald' ? 'bg-emerald-500/10 text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white' : 'bg-amber-500/10 text-amber-500 group-hover:bg-amber-500 group-hover:text-white'}`}>
       {icon}
     </div>
-    <h3 className="text-xl font-black text-gray-900 mb-4 uppercase tracking-tight">{title}</h3>
-    <p className="text-gray-500 text-sm font-medium leading-relaxed">{desc}</p>
+    <h3 className="text-xl font-black text-white mb-4 uppercase tracking-wide">{title}</h3>
+    <p className="text-gray-400 text-sm leading-relaxed">{desc}</p>
+  </div>
+);
+
+const TimelineItem = ({ step, title, desc, side }) => (
+  <div className={`flex flex-col md:flex-row items-start md:items-center gap-8 mb-16 relative ${side === 'right' ? 'md:flex-row-reverse' : ''}`}>
+    {/* Dot */}
+    <div className="absolute left-[11px] md:left-1/2 top-0 md:top-1/2 w-[18px] h-[18px] rounded-full bg-white border-4 border-emerald-500 z-10 md:-translate-y-1/2 md:-translate-x-1/2 shadow-[0_0_0_4px_rgba(255,255,255,1)]" />
+    
+    <div className={`md:w-1/2 pl-12 md:pl-0 ${side === 'right' ? 'md:pl-16 text-left' : 'md:pr-16 md:text-right'}`}>
+      <span className="text-6xl font-black text-gray-100 absolute -top-8 -z-10 select-none">{step}</span>
+      <h3 className="text-2xl font-black text-gray-900 mb-3 tracking-tight">{title}</h3>
+      <p className="text-gray-500 text-sm font-medium leading-relaxed">{desc}</p>
+    </div>
+    <div className="hidden md:block md:w-1/2" />
   </div>
 );
 

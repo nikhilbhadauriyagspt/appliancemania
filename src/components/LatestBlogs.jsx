@@ -1,80 +1,108 @@
-import { ArrowRight, Calendar, Sparkles } from 'lucide-react';
+import { ArrowRight, Calendar, Sparkles, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const LatestBlogs = () => {
   const posts = [
     {
       id: 1,
-      title: "5 Signs Your Washing Machine Needs Professional Service",
+      entry: "01",
+      title: "5 Signs Your Washing Machine Needs Service",
       excerpt: "Don't wait for a flood. Learn how to spot early warning signs of failure.",
       category: "Maintenance",
       date: "Feb 15, 2026",
+      read: "5 Min",
       image: "/washing.png"
     },
     {
       id: 2,
+      entry: "02",
       title: "Why Your Refrigerator Is Making Strange Noises",
       excerpt: "Strange sounds can mean many things. Here is a diagnostic guide.",
       category: "Kitchen",
       date: "Feb 10, 2026",
+      read: "6 Min",
       image: "/refrigerator.png"
     },
     {
       id: 3,
+      entry: "03",
       title: "Ultimate Guide to AC Deep Cleaning for Summer",
       excerpt: "Ensure your split AC is clean, gassed, and running efficiently.",
       category: "HVAC",
       date: "Feb 05, 2026",
+      read: "7 Min",
       image: "/air.jpg"
     }
   ];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 md:py-32 bg-white relative overflow-hidden" id="insights">
+      {/* Decorative */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-emerald-50/50 rounded-full blur-[100px] -ml-48 -mt-48 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100/50 text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase mb-6 shadow-sm">
-              <Sparkles size={12} /> Experts Voice
+        <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-10">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white border border-emerald-100 text-[10px] font-black tracking-[0.3em] text-emerald-600 uppercase mb-8 shadow-sm">
+              <Sparkles size={14} /> The Knowledge Base
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tighter leading-tight">
-              Latest Repair <br /> <span className="text-blue-600 italic">Insights.</span>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-950 tracking-tighter uppercase">
+              Latest Repair <span className="text-emerald-500 italic">Insights.</span>
             </h2>
           </div>
-          <Link to="/blog" className="group flex items-center gap-3 px-8 py-4 bg-gray-50 hover:bg-blue-600 text-gray-900 hover:text-white rounded-2xl font-black text-xs uppercase tracking-widest transition-all">
-            View All Posts <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          <Link to="/blog" className="group flex items-center gap-4 px-10 py-5 bg-gray-950 text-white rounded-2xl font-black text-[10px] uppercase tracking-[0.2em] transition-all hover:bg-emerald-600 shadow-xl active:scale-95">
+            View All Posts <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
           </Link>
         </div>
 
         {/* Blog Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {posts.map((post, idx) => (
             <Link 
               key={idx} 
               to={`/blog/${post.id}`} 
-              className="group bg-white rounded-[40px] overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-500 hover:shadow-[0_32px_64px_rgba(0,0,0,0.06)] flex flex-col"
+              className="group relative flex flex-col h-full"
             >
-              <div className="relative h-60 overflow-hidden">
-                <img loading="lazy" src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                <div className="absolute top-6 left-6 px-4 py-1.5 bg-white/95 backdrop-blur-sm rounded-full text-[9px] font-black uppercase text-blue-600 tracking-widest border border-white/50">
+              {/* Card Image Stage */}
+              <div className="relative h-[300px] rounded-[48px] overflow-hidden shadow-2xl border-4 border-white transition-all duration-700 group-hover:-translate-y-4 group-hover:shadow-[0_40px_80px_rgba(0,0,0,0.1)]">
+                <img loading="lazy" src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/40 via-transparent to-transparent" />
+                
+                {/* Float Category */}
+                <div className="absolute top-8 right-8 px-5 py-2 bg-white/90 backdrop-blur-md rounded-full text-[9px] font-black uppercase text-emerald-600 tracking-[0.2em] border border-white/50">
                   {post.category}
+                </div>
+                
+                {/* Float Entry ID */}
+                <div className="absolute top-8 left-8 text-3xl font-black text-white/20 italic group-hover:text-white transition-colors">
+                  {post.entry}
                 </div>
               </div>
               
-              <div className="p-8 flex flex-col flex-grow">
-                <div className="flex items-center gap-3 text-gray-400 text-[10px] font-bold mb-4 uppercase tracking-widest">
-                  <Calendar size={14} /> {post.date}
+              {/* Card Content Area */}
+              <div className="pt-10 px-6 flex flex-col flex-grow">
+                <div className="flex items-center gap-5 text-gray-400 text-[9px] font-black mb-6 uppercase tracking-[0.2em]">
+                  <span className="flex items-center gap-2"><Calendar size={12} className="text-amber-500" /> {post.date}</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-200" />
+                  <span className="flex items-center gap-2"><Clock size={12} className="text-emerald-500" /> {post.read} Read</span>
                 </div>
-                <h3 className="text-xl font-black text-gray-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors">
+                
+                <h3 className="text-xl md:text-2xl font-black text-gray-950 mb-6 leading-[1.1] group-hover:text-emerald-600 transition-colors uppercase tracking-tighter">
                   {post.title}
                 </h3>
-                <p className="text-gray-500 text-sm font-medium leading-relaxed mb-8 line-clamp-2">
+                
+                <p className="text-gray-500 text-sm font-medium leading-relaxed mb-8 line-clamp-2 uppercase tracking-wide">
                   {post.excerpt}
                 </p>
-                <div className="mt-auto flex items-center gap-2 text-blue-600 font-black text-[10px] uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all">
-                  Read Article <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                
+                <div className="mt-auto flex items-center gap-3 text-gray-950 font-black text-[10px] uppercase tracking-[0.3em] group/link">
+                  <span className="relative">
+                    Read Article
+                    <div className="absolute -bottom-1 left-0 w-full h-[2px] bg-emerald-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
+                  </span>
+                  <ArrowRight size={16} className="text-amber-500 group-hover:translate-x-2 transition-transform" />
                 </div>
               </div>
             </Link>
@@ -87,3 +115,4 @@ const LatestBlogs = () => {
 };
 
 export default LatestBlogs;
+

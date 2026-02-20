@@ -4,68 +4,77 @@ import { Monitor } from 'lucide-react';
 const TelevisionPage = () => (
   <ServiceLayout 
     title="Television"
-    desc="Display & audio fix"
-    longDesc="From LED panel replacements to complex backlight and motherboard repairs, we handle all major television brands with precision and original components."
+    desc="Advanced Display & Logic Board Repair"
+    longDesc="Precision engineering for high-resolution entertainment. We specialize in LED/OLED panel restoration, backlight synchronization, and complex motherboard circuit repairs for all premium smart TV brands."
     icon={<Monitor size={24} />}
     image="/tv.jpg"
     extraContent={
-      <div className="space-y-12">
+      <div className="space-y-16">
         <section>
-          <h2 className="text-3xl font-black text-gray-900 mb-6 uppercase tracking-tight">Crystal Clear Entertainment</h2>
-          <p className="text-gray-500 leading-relaxed font-medium">
-            Your TV is the center of your home entertainment. Whether it's a cracked screen, a display with no picture, or distorted sound, our technicians have the expertise to bring your television back to life. We specialize in LED, LCD, QLED, and OLED technologies across all major brands.
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Crystal Clear Engineering</h2>
+          <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
+            Your TV is a complex processing unit. Whether it's a distorted panel or a complete power failure, our technicians utilize infrared BGA rework stations to restore your visual experience to its original factory clarity.
           </p>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <section className="p-8 rounded-[40px] bg-gray-50 border border-gray-100">
-             <h3 className="text-xl font-black text-gray-900 mb-6 uppercase tracking-tight">Display Specializations</h3>
-             <ul className="space-y-4">
-               {[
-                 "Panel Backlight Replacement",
-                 "Vertical/Horizontal Lines Fix",
-                 "Color Distortion Correction",
-                 "Ghosting Effect Resolution"
-               ].map((text, i) => (
-                 <li key={i} className="flex gap-4 items-center">
-                   <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-[10px] font-black">{i+1}</div>
-                   <span className="text-gray-500 font-bold text-sm">{text}</span>
-                 </li>
-               ))}
-             </ul>
-          </section>
-
-          <section className="p-8 rounded-[40px] bg-blue-600 text-white shadow-xl shadow-blue-600/20">
-             <h3 className="text-xl font-black mb-6 uppercase tracking-tight">Technical Prowess</h3>
-             <p className="text-blue-100 text-sm font-medium leading-relaxed mb-6">
-               Modern smart TVs are essentially high-performance computers. Our lab is equipped with infrared BGA rework stations for precise motherboard and processor repairs.
-             </p>
-             <div className="flex gap-4">
-                <div className="px-4 py-2 rounded-xl bg-white/10 text-[10px] font-black uppercase tracking-widest border border-white/20">Motherboard</div>
-                <div className="px-4 py-2 rounded-xl bg-white/10 text-[10px] font-black uppercase tracking-widest border border-white/20">Software</div>
-                <div className="px-4 py-2 rounded-xl bg-white/10 text-[10px] font-black uppercase tracking-widest border border-white/20">Audio</div>
-             </div>
-          </section>
-        </div>
+        <section className="bg-gray-950 p-10 md:p-12 rounded-[48px] text-white relative overflow-hidden group shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 blur-[80px] -mr-32 -mt-32" />
+          <h3 className="text-2xl font-black mb-10 uppercase tracking-tight text-white relative z-10">Display Specializations:</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+            <div className="space-y-6">
+              <h4 className="text-emerald-500 font-black uppercase text-[10px] tracking-[0.3em]">Optical Systems</h4>
+              <ul className="space-y-4">
+                {[
+                  "Backlight Array Restoration",
+                  "Panel Refresh Diagnostics",
+                  "Color Calibration Optimization",
+                  "Filter & Diffuser Alignment"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest group/item">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            <div className="space-y-6">
+              <h4 className="text-amber-500 font-black uppercase text-[10px] tracking-[0.3em]">Logic & Input</h4>
+              <ul className="space-y-4">
+                {[
+                  "Motherboard Component Rework",
+                  "HDMI & Input Node Repair",
+                  "Software Kernel Restoration",
+                  "Power Supply Unit Tuning"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">Why Choose Our TV Service?</h3>
-          <p className="text-gray-500 leading-relaxed font-medium mb-8">
-            Handling fragile display panels requires a clean environment and specialized suction tools. We ensure your TV is handled with the utmost care to prevent any further damage during the repair process.
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Precision Handling</h3>
+          <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
+            Fragile display panels require absolute atmospheric control and specialized vacuum tools. We ensure your television is processed in a lint-free technical environment to prevent internal pixel contamination.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-             <div className="text-center">
-                <div className="text-3xl font-black text-blue-600 mb-1">100%</div>
-                <div className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">Original Panels</div>
-             </div>
-             <div className="text-center">
-                <div className="text-3xl font-black text-blue-600 mb-1">Home</div>
-                <div className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">Pickup/Drop</div>
-             </div>
-             <div className="text-center">
-                <div className="text-3xl font-black text-blue-600 mb-1">Live</div>
-                <div className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">Testing Labs</div>
-             </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { label: "OLED/QLED", val: "Mastery" },
+              { label: "4K / 8K", val: "Diagnostics" },
+              { label: "Original", val: "Components" },
+              { label: "Safe Transport", val: "Protocol" }
+            ].map((item, idx) => (
+              <div key={idx} className="p-6 rounded-[28px] bg-gray-50 border border-gray-100 text-center hover:bg-white hover:shadow-xl transition-all duration-500 group">
+                <div className="text-emerald-600 font-black text-[9px] uppercase mb-2 tracking-[0.2em]">{item.label}</div>
+                <div className="text-gray-950 font-black text-[10px] uppercase tracking-tighter">{item.val}</div>
+              </div>
+            ))}
           </div>
         </section>
       </div>
@@ -74,4 +83,3 @@ const TelevisionPage = () => (
 );
 
 export default TelevisionPage;
-

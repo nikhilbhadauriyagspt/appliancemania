@@ -4,66 +4,78 @@ import { Snowflake } from 'lucide-react';
 const AirConditionerPage = () => (
   <ServiceLayout 
     title="Air Conditioner"
-    desc="Gas refilling & PCB fix"
-    longDesc="Experience superior cooling once again. Our certified HVAC technicians specialize in gas refilling, PCB circuit repairs, and deep chemical cleaning for split and window ACs."
+    desc="Gas Refilling & PCB Circuit Diagnostics"
+    longDesc="Experience superior thermal regulation once again. Our certified HVAC engineers specialize in precision gas refilling, advanced PCB circuit repairs, and deep chemical decontamination for all split and window systems."
     icon={<Snowflake size={24} />}
     image="/air.jpg"
     extraContent={
-      <div className="space-y-12">
+      <div className="space-y-16">
         <section>
-          <h2 className="text-3xl font-black text-gray-900 mb-6 uppercase tracking-tight">Comprehensive Cooling Care</h2>
-          <p className="text-gray-500 leading-relaxed font-medium">
-            When the summer heat strikes, a malfunctioning AC is the last thing you want. Our expert technicians are equipped with the latest diagnostic tools to identify and resolve issues quickly. We don't just fix the immediate problem; we ensure your unit is operating at peak efficiency to save you money on energy bills.
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Elite Cooling Restoration</h2>
+          <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
+            When thermal efficiency drops, immediate technical intervention is required. We don't just fix symptoms; we optimize your unit's entire thermodynamic cycle to ensure peak performance and reduced energy consumption.
           </p>
         </section>
 
-        <section className="bg-blue-50/50 p-10 rounded-[40px] border border-blue-100/50">
-          <h3 className="text-2xl font-black text-blue-600 mb-6 uppercase tracking-tight">Our AC Services Include:</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-blue-600 mt-2.5 flex-shrink-0" />
-              <div>
-                <h4 className="font-black text-gray-900 uppercase text-sm mb-1">Gas Charging</h4>
-                <p className="text-gray-500 text-sm font-bold">Precision refilling of R32, R410, and R22 refrigerants.</p>
-              </div>
+        <section className="bg-gray-950 p-10 md:p-12 rounded-[48px] text-white relative overflow-hidden group shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 blur-[80px] -mr-32 -mt-32" />
+          <h3 className="text-2xl font-black mb-10 uppercase tracking-tight text-white relative z-10">Our AC Services Include:</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+            <div className="space-y-6">
+              <h4 className="text-emerald-500 font-black uppercase text-[10px] tracking-[0.3em]">Thermal Systems</h4>
+              <ul className="space-y-4">
+                {[
+                  "Precision Gas Charging (R32/R410)",
+                  "Compressor Efficiency Tuning",
+                  "Deep Chemical Jet Cleaning",
+                  "Evaporator Coil Restoration"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest group/item">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-blue-600 mt-2.5 flex-shrink-0" />
-              <div>
-                <h4 className="font-black text-gray-900 uppercase text-sm mb-1">PCB Repair</h4>
-                <p className="text-gray-500 text-sm font-bold">Advanced circuit board troubleshooting and component replacement.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-blue-600 mt-2.5 flex-shrink-0" />
-              <div>
-                <h4 className="font-black text-gray-900 uppercase text-sm mb-1">Jet Service</h4>
-                <p className="text-gray-500 text-sm font-bold">High-pressure water cleaning for indoor and outdoor units.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-blue-600 mt-2.5 flex-shrink-0" />
-              <div>
-                <h4 className="font-black text-gray-900 uppercase text-sm mb-1">Installation</h4>
-                <p className="text-gray-500 text-sm font-bold">Standard and customized installation for split and window ACs.</p>
-              </div>
+            
+            <div className="space-y-6">
+              <h4 className="text-amber-500 font-black uppercase text-[10px] tracking-[0.3em]">Electrical Logic</h4>
+              <ul className="space-y-4">
+                {[
+                  "logic board (PCB) Diagnostics",
+                  "Sensor & Relay Replacement",
+                  "Capacitor & Fan Motor Fix",
+                  "Advanced Wiring Calibration"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">Why Choose Professional AC Repair?</h3>
-          <p className="text-gray-500 leading-relaxed font-medium mb-6">
-            Modern air conditioners are complex machines involving high-pressure refrigerants and sensitive electronics. DIY repairs can often lead to more damage or even safety hazards. Our technicians are certified to handle these complexities, ensuring:
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Technical Superiority</h3>
+          <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
+            Handling fragile HVAC components requires specialized vacuum pumps and digital manifold gauges. We ensure your system is sealed and pressurized to exact factory specifications for long-term reliability.
           </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {["Extended Equipment Life", "Improved Air Quality", "Optimized Power Consumption", "Quiet Operation"].map((point, idx) => (
-              <li key={idx} className="flex items-center gap-3 text-gray-900 font-black text-xs uppercase tracking-wider">
-                <div className="w-6 h-6 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center">✓</div>
-                {point}
-              </li>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { label: "Split AC", val: "Engineering" },
+              { label: "Window AC", val: "Diagnostics" },
+              { label: "Gas Flow", val: "Guaranteed" },
+              { label: "Thermal", val: "Deployment" }
+            ].map((item, idx) => (
+              <div key={idx} className="p-6 rounded-[28px] bg-gray-50 border border-gray-100 text-center hover:bg-white hover:shadow-xl transition-all duration-500 group">
+                <div className="text-emerald-600 font-black text-[9px] uppercase mb-2 tracking-[0.2em]">{item.label}</div>
+                <div className="text-gray-950 font-black text-[10px] uppercase tracking-tighter">{item.val}</div>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
       </div>
     }
@@ -71,4 +83,3 @@ const AirConditionerPage = () => (
 );
 
 export default AirConditionerPage;
-

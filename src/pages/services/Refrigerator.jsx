@@ -4,56 +4,77 @@ import { Refrigerator } from 'lucide-react';
 const RefrigeratorPage = () => (
   <ServiceLayout 
     title="Refrigerator"
-    desc="Cooling & compressor fix"
-    longDesc="Expert cooling solutions for all major brands. We fix compressor issues, gas leaks, thermostat failures, and seal replacements with 100% genuine parts."
+    desc="Master Cooling & Compressor Diagnostics"
+    longDesc="Expert thermal engineering for all major brands. We specialize in compressor restoration, precision gas charging, thermostat calibration, and high-efficiency seal replacements using 100% genuine OEM components."
     icon={<Refrigerator size={24} />}
     image="/refrigerator.png"
     extraContent={
-      <div className="space-y-12">
+      <div className="space-y-16">
         <section>
-          <h2 className="text-3xl font-black text-gray-900 mb-6 uppercase tracking-tight">Preserving Your Freshness</h2>
-          <p className="text-gray-500 leading-relaxed font-medium">
-            Your refrigerator is the heart of your kitchen, working 24/7 to keep your food fresh and safe. When it stops cooling or starts making strange noises, you need immediate professional attention. Our experts specialize in both single-door and double-door refrigerators, as well as side-by-side premium models.
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Preserving Your Freshness</h2>
+          <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
+            Your refrigerator is the critical center of your kitchen. When cooling fails or strange mechanical noises occur, immediate professional attention is vital. Our engineers specialize in single-door, double-door, and premium side-by-side technical systems.
           </p>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { title: "Not Cooling", desc: "Most common issue caused by gas leakage or compressor failure." },
-            { title: "Water Leakage", desc: "Often due to a blocked defrost drain or cracked drain pan." },
-            { title: "Noise Issues", desc: "Usually caused by a faulty fan motor or compressor vibrations." }
-          ].map((item, idx) => (
-            <div key={idx} className="p-8 rounded-[32px] bg-blue-50/30 border border-blue-100/50">
-              <h4 className="font-black text-blue-600 uppercase text-xs mb-3 tracking-widest">{item.title}</h4>
-              <p className="text-gray-500 text-sm font-bold leading-relaxed">{item.desc}</p>
+        <section className="bg-gray-950 p-10 md:p-12 rounded-[48px] text-white relative overflow-hidden group shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 blur-[80px] -mr-32 -mt-32" />
+          <h3 className="text-2xl font-black mb-10 uppercase tracking-tight text-white relative z-10">What We Resolve:</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+            <div className="space-y-6">
+              <h4 className="text-emerald-500 font-black uppercase text-[10px] tracking-[0.3em]">Cooling Architecture</h4>
+              <ul className="space-y-4">
+                {[
+                  "Compressor Torque Restoration",
+                  "Evaporator Coil De-Icing",
+                  "Gas Pressure Normalization",
+                  "Condenser Fan Tuning"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest group/item">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
+            
+            <div className="space-y-6">
+              <h4 className="text-amber-500 font-black uppercase text-[10px] tracking-[0.3em]">Precision Control</h4>
+              <ul className="space-y-4">
+                {[
+                  "Thermostat Sensor Calibration",
+                  "Defrost Cycle Optimization",
+                  "Logic Board (PCB) Repair",
+                  "Internal Lighting Systems"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[11px] font-black text-gray-400 uppercase tracking-widest">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">Professional Diagnostics</h3>
-          <p className="text-gray-500 leading-relaxed font-medium mb-10">
-            We use advanced thermal imaging and pressure gauges to detect leaks and electrical faults that might be missed by a standard visual inspection. This ensures a long-lasting fix rather than a temporary patch.
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Diagnostic Mastery</h3>
+          <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
+            We utilize advanced thermal imaging and pressure gauges to detect micro-leaks and electrical faults that conventional inspections miss. This ensures a permanent engineering fix rather than a temporary patch.
           </p>
-          <div className="bg-gray-50 p-8 rounded-[40px] border border-gray-100 flex flex-wrap gap-8 justify-between">
-            <div className="flex-1 min-w-[200px]">
-              <h5 className="font-black text-gray-900 text-sm uppercase mb-2">Compressor Repair</h5>
-              <div className="h-1.5 w-full bg-gray-200 rounded-full overflow-hidden">
-                <div className="h-full bg-blue-600 w-[90%]" />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { label: "Side-by-Side", val: "Engineering" },
+              { label: "Double Door", val: "Diagnostics" },
+              { label: "Gas Flow", val: "Guaranteed" },
+              { label: "90-Day", val: "Deployment" }
+            ].map((item, idx) => (
+              <div key={idx} className="p-6 rounded-[28px] bg-gray-50 border border-gray-100 text-center hover:bg-white hover:shadow-xl transition-all duration-500 group">
+                <div className="text-emerald-600 font-black text-[9px] uppercase mb-2 tracking-[0.2em]">{item.label}</div>
+                <div className="text-gray-950 font-black text-[10px] uppercase tracking-tighter">{item.val}</div>
               </div>
-            </div>
-            <div className="flex-1 min-w-[200px]">
-              <h5 className="font-black text-gray-900 text-sm uppercase mb-2">Gas Charging</h5>
-              <div className="h-1.5 w-full bg-gray-200 rounded-full overflow-hidden">
-                <div className="h-full bg-blue-600 w-[95%]" />
-              </div>
-            </div>
-            <div className="flex-1 min-w-[200px]">
-              <h5 className="font-black text-gray-900 text-sm uppercase mb-2">Thermostat Fix</h5>
-              <div className="h-1.5 w-full bg-gray-200 rounded-full overflow-hidden">
-                <div className="h-full bg-blue-600 w-[85%]" />
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </div>
@@ -62,4 +83,3 @@ const RefrigeratorPage = () => (
 );
 
 export default RefrigeratorPage;
-

@@ -1,4 +1,4 @@
-import { Wrench, Mail, MapPin, ArrowUpRight, ShieldCheck, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Zap, Mail, MapPin, ArrowUpRight, ShieldCheck, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -11,14 +11,8 @@ const Footer = () => {
   const handleSubscribe = (e) => {
     e.preventDefault();
     if (!email) return;
-    
     setIsSubmitting(true);
-    
-    const encode = (data) => {
-      return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-    };
+    const encode = (data) => Object.keys(data).map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])).join("&");
 
     fetch("/", {
       method: "POST",
@@ -42,7 +36,6 @@ const Footer = () => {
       { name: 'About Us', path: '/about' },
       { name: 'Latest Blog', path: '/blog' },
       { name: 'Contact', path: '/contact' },
-     
     ],
     services: [
       { name: 'Washing Machine', path: '/service/washing-machine' },
@@ -62,153 +55,141 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gray-50/50 pt-24 pb-12 overflow-hidden border-t border-gray-100">
-      {/* Aesthetic Background Accents - Very subtle for light theme */}
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-50/80 blur-[120px] rounded-full pointer-events-none -z-10" />
+    <footer className="relative bg-white pt-16 pb-8 overflow-hidden border-t border-gray-50 w-full">
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-50/50 rounded-full blur-[120px] -mr-48 -mt-48 pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-full px-6 md:px-12 lg:px-20 relative z-10">
         
-        {/* Top Section: Brand & Newsletter Bento */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
-          <div className="lg:col-span-5">
-            <Link to="/" className="flex items-center gap-2 mb-8 group">
-              <div className="bg-blue-600 p-2 rounded-xl group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-blue-500/20">
-                <Wrench className="text-white" size={24} />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-16 items-start">
+          {/* Brand Section */}
+          <div className="lg:col-span-4 space-y-8">
+            <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
+              <div className="relative">
+                <div className="absolute inset-0 bg-emerald-500 blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
+                <div className="relative bg-gray-950 w-12 h-12 rounded-[18px] flex items-center justify-center transform group-hover:-rotate-6 transition-transform duration-500 shadow-2xl">
+                  <Zap className="text-emerald-500" size={22} fill="currentColor" />
+                </div>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="text-2xl font-black tracking-tighter text-gray-900 uppercase">
-                  APPLIANCE<span className="text-blue-600">NERDY</span>
-                </span>
-                <span className="text-[10px] font-black tracking-[0.2em] text-blue-500/80 uppercase">Premium Repair Services</span>
+                <h2 className="text-xl font-black tracking-tighter text-gray-950 uppercase">
+                  APPLIANCE<span className="text-emerald-600">MANIA</span>
+                </h2>
+                <div className="flex items-center gap-1.5 mt-1">
+                  <div className="w-5 h-[2px] bg-amber-500 rounded-full" />
+                  <span className="text-[7px] font-black tracking-[0.3em] text-gray-400 uppercase">Repair Services</span>
+                </div>
               </div>
             </Link>
-            <p className="text-gray-500 text-lg font-medium leading-relaxed max-w-sm mb-10">
-              Your trusted partner for high-end appliance repairs. Delivering precision and reliability to your doorstep since 2026.
+            <p className="text-gray-500 text-sm font-medium leading-relaxed max-w-sm uppercase tracking-widest text-[11px]">
+              Your trusted partner for high-end appliance repairs. Delivering precision and reliability since 2026.
             </p>
+            <div className="pt-4 flex flex-col gap-4 border-t border-gray-50">
+              <div className="flex items-center gap-3 group">
+                <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                  <Mail size={16} />
+                </div>
+                <a href="mailto:info@appliancemania.shop" className="text-xs font-black text-gray-950 hover:text-emerald-600 transition-colors uppercase tracking-tight">info@appliancemania.shop</a>
+              </div>
+              <div className="flex items-start gap-3 group">
+                <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-white transition-all shrink-0">
+                  <MapPin size={16} />
+                </div>
+                <p className="text-xs font-black text-gray-950 uppercase tracking-tighter leading-tight pt-1">
+                  128 E Pacific Coast Hwy, Long Beach, CA 90813, USA
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="lg:col-span-7">
-            <div className="bg-white border border-gray-200 rounded-[48px] p-10 relative overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500">
-               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50 blur-[80px] group-hover:bg-blue-100 transition-all duration-700" />
-               <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                  <div className="text-center md:text-left">
-                    <div className="flex items-center gap-2 mb-2 justify-center md:justify-start">
-                      <Sparkles size={16} className="text-blue-600" />
-                      <h3 className="text-gray-900 text-2xl font-black tracking-tight">Stay in the loop.</h3>
-                    </div>
-                    <p className="text-gray-500 text-sm font-medium">Get the latest repair tips and exclusive offers.</p>
-                  </div>
-                  <form onSubmit={handleSubscribe} className="w-full md:w-auto">
-                    <input type="hidden" name="form-name" value="newsletter" />
-                    <div className="flex p-1.5 bg-gray-50 border border-gray-100 rounded-2xl relative">
-                      <input 
-                        required
-                        name="email"
-                        type="email" 
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Your email" 
-                        className="bg-transparent px-4 py-3 text-gray-900 text-sm font-bold outline-none flex-grow min-w-[150px] placeholder:text-gray-400"
-                      />
-                      <button 
-                        disabled={isSubmitting}
-                        type="submit"
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all cursor-pointer shadow-lg shadow-blue-600/20 disabled:opacity-50"
-                      >
-                        {isSubmitting ? '...' : 'Join'}
-                      </button>
+          {/* Links Grid */}
+          <div className="lg:col-span-5 grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h4 className="text-[10px] font-black text-gray-400 uppercase tracking-[0.3em] mb-6">Company</h4>
+              <ul className="space-y-3">
+                {footerLinks.company.map(link => (
+                  <li key={link.name}>
+                    <Link to={link.path} className="text-gray-500 hover:text-emerald-600 font-bold text-xs uppercase tracking-widest transition-colors flex items-center gap-1 group">
+                      {link.name} <ArrowUpRight size={10} className="opacity-0 group-hover:opacity-100 transition-all" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-[10px] font-black text-gray-400 uppercase tracking-[0.3em] mb-6">Services</h4>
+              <ul className="space-y-3">
+                {footerLinks.services.map(link => (
+                  <li key={link.name}>
+                    <Link to={link.path} className="text-gray-500 hover:text-emerald-600 font-bold text-xs uppercase tracking-widest transition-colors">{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-[10px] font-black text-gray-400 uppercase tracking-[0.3em] mb-6">Support</h4>
+              <ul className="space-y-3">
+                {footerLinks.support.map(link => (
+                  <li key={link.name}>
+                    <Link to={link.path} className="text-gray-500 hover:text-emerald-600 font-bold text-xs uppercase tracking-widest transition-colors">{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
 
-                      {/* Inline Success Message */}
-                      {isSuccess && (
-                        <div className="absolute -bottom-10 left-0 right-0 text-center md:text-left flex items-center gap-2 text-emerald-600 animate-in fade-in slide-in-from-top-2 duration-300">
-                          <CheckCircle2 size={14} />
-                          <span className="text-[10px] font-black uppercase tracking-widest">Subscribed Successfully!</span>
-                        </div>
-                      )}
-                    </div>
-                  </form>
+          {/* Newsletter Section */}
+          <div className="lg:col-span-3">
+            <div className="bg-gray-50 rounded-[32px] p-8 border border-gray-100 relative overflow-hidden">
+               <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-600/5 blur-[40px]" />
+               <div className="relative z-10">
+                 <div className="flex items-center gap-2 mb-4">
+                   <Sparkles size={16} className="text-emerald-600" />
+                   <h3 className="text-gray-950 text-sm font-black uppercase tracking-tight">Technical Journal</h3>
+                 </div>
+                 <form onSubmit={handleSubscribe} className="space-y-3">
+                   <div className="relative">
+                     <input 
+                       required
+                       type="email" 
+                       value={email}
+                       onChange={(e) => setEmail(e.target.value)}
+                       placeholder="EMAIL ADDRESS" 
+                       className="w-full bg-white border border-gray-100 rounded-xl px-5 py-3 text-gray-950 text-xs font-black uppercase tracking-widest outline-none focus:border-emerald-500 transition-all shadow-sm placeholder:text-gray-300"
+                     />
+                   </div>
+                   <button 
+                     disabled={isSubmitting}
+                     className="w-full bg-gray-950 hover:bg-emerald-600 text-white py-3.5 rounded-xl font-black text-[10px] uppercase tracking-[0.2em] transition-all cursor-pointer disabled:opacity-50 flex items-center justify-center gap-2 group/btn shadow-lg shadow-gray-950/10"
+                   >
+                     {isSubmitting ? '...' : <>Join <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" /></>}
+                   </button>
+                 </form>
+                 {isSuccess && (
+                   <p className="mt-4 text-[9px] font-black text-emerald-600 uppercase tracking-widest flex items-center gap-1">
+                     <CheckCircle2 size={12} /> Successfully Enrolled
+                   </p>
+                 )}
                </div>
             </div>
           </div>
         </div>
 
-        {/* Middle Section: Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-12 mb-20 border-b border-gray-100 pb-20">
-          <div>
-            <h4 className="text-[11px] font-black text-gray-900 uppercase tracking-[0.3em] mb-8">The Company</h4>
-            <ul className="space-y-4">
-              {footerLinks.company.map(link => (
-                <li key={link.name}>
-                  <Link to={link.path} className="text-gray-500 hover:text-blue-600 font-bold text-sm transition-colors flex items-center gap-1 group">
-                    {link.name} <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-[11px] font-black text-gray-900 uppercase tracking-[0.3em] mb-8">Popular Services</h4>
-            <ul className="space-y-4">
-              {footerLinks.services.map(link => (
-                <li key={link.name}>
-                  <Link to={link.path} className="text-gray-500 hover:text-blue-600 font-bold text-sm transition-colors">{link.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-[11px] font-black text-gray-900 uppercase tracking-[0.3em] mb-8">Our Support</h4>
-            <ul className="space-y-4">
-              {footerLinks.support.map(link => (
-                <li key={link.name}>
-                  <Link to={link.path} className="text-gray-500 hover:text-blue-600 font-bold text-sm transition-colors">{link.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="col-span-2 md:col-span-1">
-            <h4 className="text-[11px] font-black text-gray-900 uppercase tracking-[0.3em] mb-8">Contact Info</h4>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm shrink-0">
-                  <Mail size={18} />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[9px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1">Send Email</span>
-                  <a href="mailto:info@appliancenerdy.shop" className="text-sm font-bold text-gray-900 hover:text-blue-600 transition-colors tracking-tight">info@appliancenerdy.shop</a>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm shrink-0">
-                  <MapPin size={18} />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[9px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1">Visit Us</span>
-                  <span className="text-sm font-bold text-gray-900 tracking-tight">128 E Pacific Coast Hwy, Long Beach, CA 90813, USA</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Section: Copyright & Badges */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-100 rounded-full shadow-sm">
+        {/* Bottom Bar */}
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-50 gap-8">
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex items-center gap-2.5 px-4 py-2 bg-gray-50 border border-gray-100 rounded-full">
                <ShieldCheck size={14} className="text-emerald-600" />
-               <span className="text-[10px] font-black text-emerald-700 uppercase tracking-widest">SSL Secured</span>
+               <span className="text-[9px] font-black text-gray-950 uppercase tracking-[0.2em]">SSL SECURED</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full shadow-sm">
-               <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">Premium Service Certified</span>
+            <div className="flex items-center gap-2.5 px-4 py-2 bg-gray-50 border border-gray-100 rounded-full">
+               <CheckCircle2 size={14} className="text-amber-500" />
+               <span className="text-[9px] font-black text-gray-950 uppercase tracking-[0.2em]">MASTER CERTIFIED</span>
             </div>
           </div>
           
           <div className="text-center md:text-right">
-            <p className="text-gray-400 text-xs font-bold uppercase tracking-[0.1em] mb-1">
-              &copy; {currentYear} APPLIANCENERDY. Built with Precision.
-            </p>
-            <p className="text-[10px] text-gray-300 font-medium">
-              Made with passion for perfect appliance maintenance.
+            <p className="text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">
+              &copy; {currentYear} APPLIANCEMANIA. Built with Precision.
             </p>
           </div>
         </div>

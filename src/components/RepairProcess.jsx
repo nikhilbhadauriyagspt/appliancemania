@@ -1,4 +1,4 @@
-import { Search, CalendarCheck, Wrench, ShieldCheck, ArrowRight, Sparkles } from 'lucide-react';
+import { Search, CalendarCheck, Wrench, ShieldCheck, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
 import BookingModal from './BookingModal';
 
@@ -8,113 +8,86 @@ const RepairProcess = () => {
   const steps = [
     {
       id: "01",
-      title: "Discovery",
-      label: "Select Service",
-      desc: "Browse our premium repair catalog and identify your specific appliance needs.",
-      icon: <Search size={22} />,
-      color: "blue"
+      title: "Selection",
+      desc: "Pick your service.",
+      icon: <Search size={20} />,
+      color: "emerald"
     },
     {
       id: "02",
-      title: "Schedule",
-      label: "Book Expert",
-      desc: "Our AI system matches you with the best available certified technician in your area.",
-      icon: <CalendarCheck size={22} />,
-      color: "indigo"
+      title: "Booking",
+      desc: "Instant matching.",
+      icon: <CalendarCheck size={20} />,
+      color: "amber"
     },
     {
       id: "03",
-      title: "Execution",
-      label: "Repair Done",
-      desc: "The technician arrives with genuine parts to restore your appliance's peak performance.",
-      icon: <Wrench size={22} />,
+      title: "Repair",
+      desc: "Original parts fix.",
+      icon: <Wrench size={20} />,
       color: "emerald"
     },
     {
       id: "04",
-      title: "Guarantee",
-      label: "Peace of Mind",
-      desc: "Receive a verified 90-day warranty certificate instantly on your mobile device.",
-      icon: <ShieldCheck size={22} />,
-      color: "blue"
+      title: "Warranty",
+      desc: "90-Day guarantee.",
+      icon: <ShieldCheck size={20} />,
+      color: "amber"
     }
   ];
 
   return (
-    <section id="repair-process" className="py-32 bg-white relative overflow-hidden">
-      {/* Aesthetic Background Orbs */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-blue-50/30 blur-[120px] rounded-full -z-10" />
-      
+    <section id="repair-process" className="py-24 md:py-32 bg-white relative overflow-hidden border-y border-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Aesthetic Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100/50 text-[10px] font-black tracking-[0.3em] text-blue-600 uppercase mb-6 shadow-sm">
-              <Sparkles size={12} /> The Workflow
-            </div>
-            <h2 className="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-[0.9]">
-              How We <br /> <span className="text-blue-600 italic">Restore</span> Order.
-            </h2>
+        {/* Simplified Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[10px] font-black tracking-[0.3em] text-emerald-600 uppercase mb-6">
+            <Sparkles size={14} /> The Workflow
           </div>
-          <p className="text-gray-400 font-medium max-w-xs text-sm md:text-base border-l-2 border-blue-100 pl-6 mb-2">
-            A seamless, technology-driven journey from breakdown to guaranteed performance.
-          </p>
+          <h2 className="text-3xl md:text-5xl font-black text-gray-950 tracking-tighter uppercase leading-none">
+            How We <span className="text-emerald-500 italic">Restore</span> Order.
+          </h2>
         </div>
 
-        {/* Steps Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-          
-          {/* Subtle Connection Line (Desktop) */}
-          <div className="absolute top-[60px] left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-gray-100 to-transparent hidden lg:block" />
+        {/* Straight Line Process */}
+        <div className="relative">
+          {/* Connecting Line (Desktop) */}
+          <div className="absolute top-10 left-[10%] right-[10%] h-[2px] border-t-2 border-dashed border-gray-100 hidden lg:block" />
 
-          {steps.map((step, idx) => (
-            <div key={idx} className="relative group">
-              {/* Large Aesthetic Background Number */}
-              <span className="absolute -top-10 left-0 text-[120px] font-black text-gray-50 opacity-0 group-hover:opacity-100 group-hover:-translate-y-4 transition-all duration-700 pointer-events-none italic select-none">
-                {step.id}
-              </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-8">
+            {steps.map((step, idx) => (
+              <div key={idx} className="relative group text-center">
+                <div className="flex flex-col items-center">
+                  
+                  {/* Icon Module */}
+                  <div className={`relative z-10 w-20 h-20 rounded-[28px] bg-white border border-gray-100 shadow-xl flex items-center justify-center mb-8 transition-all duration-500 group-hover:-translate-y-2 group-hover:rotate-6 ${step.color === 'emerald' ? 'text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white' : 'text-amber-500 group-hover:bg-amber-500 group-hover:text-white'}`}>
+                    {step.icon}
+                    <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-gray-950 text-white text-[10px] font-black flex items-center justify-center border-4 border-white">
+                      {step.id}
+                    </div>
+                  </div>
 
-              <div className="relative z-10 p-8 rounded-[40px] bg-white border border-gray-100 hover:border-blue-100 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.04)] h-full flex flex-col">
-                
-                {/* Icon Capsule */}
-                <div className={`w-14 h-14 rounded-2xl bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 flex items-center justify-center mb-10 shadow-sm border border-transparent group-hover:border-blue-400 group-hover:scale-110 group-hover:rotate-3`}>
-                  {step.icon}
-                </div>
+                  {/* Text Content */}
+                  <div className="space-y-2">
+                    <h3 className="text-lg font-black text-gray-950 uppercase tracking-tight">{step.title}</h3>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest leading-relaxed max-w-[150px]">{step.desc}</p>
+                  </div>
 
-                <div className="flex flex-col gap-1 mb-4">
-                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em]">{step.title}</span>
-                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">{step.label}</h3>
-                </div>
-
-                <p className="text-gray-500 text-sm font-medium leading-relaxed mb-8">
-                  {step.desc}
-                </p>
-
-                {/* Aesthetic Detail */}
-                <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                   <span className="text-[10px] font-bold text-gray-300 uppercase tracking-widest">Step {step.id}</span>
-                   <ArrowRight size={16} className="text-blue-200 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* Bottom Call to Action Section */}
-        <div className="mt-24 text-center">
-           <button 
+        {/* Simplified CTA */}
+        <div className="mt-24 flex justify-center">
+          <button 
             onClick={() => setIsModalOpen(true)}
-            className="relative group px-12 py-6 bg-gray-900 text-white rounded-3xl font-black text-xs uppercase tracking-[0.3em] overflow-hidden transition-all hover:bg-blue-600 shadow-2xl active:scale-95 cursor-pointer"
-           >
-              <span className="relative z-10 flex items-center gap-4">
-                Initialize Booking <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity" />
-           </button>
-           <p className="mt-8 text-gray-400 text-[10px] font-bold uppercase tracking-widest flex items-center justify-center gap-2">
-             <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" /> Same day service available in your area
-           </p>
+            className="px-12 py-6 bg-gray-950 text-white rounded-2xl font-black text-[10px] uppercase tracking-[0.3em] hover:bg-emerald-600 transition-all shadow-2xl shadow-gray-900/10 active:scale-95 flex items-center justify-center gap-4 group cursor-pointer"
+          >
+            Book Specialist Now <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
 
       </div>
@@ -122,10 +95,12 @@ const RepairProcess = () => {
       <BookingModal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 
-        serviceTitle="Full Diagnostic" 
+        serviceTitle="Appliance Repair" 
       />
     </section>
   );
 };
 
 export default RepairProcess;
+
+
