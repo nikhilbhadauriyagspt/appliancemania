@@ -52,7 +52,7 @@ const ServiceDetail = () => {
             
             <h1 className="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-[0.9] mb-8">
               {service.title} <br />
-              <span className="text-blue-600 italic">Specialists.</span>
+              <span className="text-blue-600 italic">appliance cares.</span>
             </h1>
             
             <div className="prose prose-lg max-w-none">
@@ -105,7 +105,7 @@ const ServiceDetail = () => {
                   </div>
                   <div>
                     <h5 className="font-black text-gray-900 uppercase text-sm mb-1">Fast Response</h5>
-                    <p className="text-gray-500 text-xs font-bold">Technician reaches in 60 mins</p>
+                    <p className="text-gray-500 text-xs font-bold">appliance repair reaches in 60 mins</p>
                   </div>
                 </div>
 

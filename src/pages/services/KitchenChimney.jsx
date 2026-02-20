@@ -61,11 +61,11 @@ const KitchenChimneyPage = () => (
         <section>
           <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Operational Efficiency</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
-            We utilize digital anemometers to measure the exact air-flow velocity at the intake and exhaust nodes. This engineering approach ensures your chimney maintains the required CFM (Cubic Feet per Minute) for an odor-free kitchen environment.
+            We utilize digital anemometers to measure the exact air-flow velocity at the intake and exhaust nodes. This Appliance approach ensures your chimney maintains the required CFM (Cubic Feet per Minute) for an odor-free kitchen environment.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "High Suction", val: "Engineering" },
+              { label: "High Suction", val: "Appliance" },
               { label: "Deep Clean", val: "Diagnostics" },
               { label: "OEM Motor", val: "Guaranteed" },
               { label: "Odor Free", val: "Deployment" }

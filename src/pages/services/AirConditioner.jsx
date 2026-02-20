@@ -5,7 +5,7 @@ const AirConditionerPage = () => (
   <ServiceLayout 
     title="Air Conditioner"
     desc="Gas Refilling & PCB Circuit Diagnostics"
-    longDesc="Experience superior thermal regulation once again. Our certified HVAC engineers specialize in precision gas refilling, advanced PCB circuit repairs, and deep chemical decontamination for all split and window systems."
+    longDesc="Experience superior thermal regulation once again. Our certified HVAC appliance repairs specialize in precision gas refilling, advanced PCB circuit repairs, and deep chemical decontamination for all split and window systems."
     icon={<Snowflake size={24} />}
     image="/air.jpg"
     extraContent={
@@ -13,7 +13,7 @@ const AirConditionerPage = () => (
         <section>
           <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Elite Cooling Restoration</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            When thermal efficiency drops, immediate technical intervention is required. We don't just fix symptoms; we optimize your unit's entire thermodynamic cycle to ensure peak performance and reduced energy consumption.
+            When thermal efficiency drops, immediate care intervention is required. We don't just fix symptoms; we optimize your unit's entire thermodynamic cycle to ensure peak performance and reduced energy consumption.
           </p>
         </section>
 
@@ -59,13 +59,13 @@ const AirConditionerPage = () => (
         </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Technical Superiority</h3>
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">care Superiority</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
             Handling fragile HVAC components requires specialized vacuum pumps and digital manifold gauges. We ensure your system is sealed and pressurized to exact factory specifications for long-term reliability.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Split AC", val: "Engineering" },
+              { label: "Split AC", val: "Appliance" },
               { label: "Window AC", val: "Diagnostics" },
               { label: "Gas Flow", val: "Guaranteed" },
               { label: "Thermal", val: "Deployment" }

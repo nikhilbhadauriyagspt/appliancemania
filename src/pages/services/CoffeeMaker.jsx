@@ -4,7 +4,7 @@ import { Coffee } from 'lucide-react';
 const CoffeeMakerPage = () => (
   <ServiceLayout 
     title="Coffee Maker"
-    desc="Precision Thermal & Pressure Engineering"
+    desc="Precision Thermal & Pressure Appliance"
     longDesc="Restore the perfect extraction for your morning ritual. We specialize in high-pressure pump diagnostics, thermal block descaling, and precise grinder calibration for all premium espresso and drip coffee systems."
     icon={<Coffee size={24} />}
     image="/coffee.jpg"
@@ -13,7 +13,7 @@ const CoffeeMakerPage = () => (
         <section>
           <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">The Art of Extraction</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            Great coffee depends on stable temperature and exact pressure. Our technicians utilize digital flow-meters and thermal sensors to ensure your machine reaches the 9 bar pressure required for perfect espresso extraction.
+            Great coffee depends on stable temperature and exact pressure. Our appliance repairs utilize digital flow-meters and thermal sensors to ensure your machine reaches the 9 bar pressure required for perfect espresso extraction.
           </p>
         </section>
 
@@ -65,7 +65,7 @@ const CoffeeMakerPage = () => (
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Espresso", val: "Engineering" },
+              { label: "Espresso", val: "Appliance" },
               { label: "Extraction", val: "Diagnostics" },
               { label: "9 Bar", val: "Guaranteed" },
               { label: "Flavor", val: "Deployment" }

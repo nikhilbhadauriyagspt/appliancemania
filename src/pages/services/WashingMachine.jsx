@@ -4,8 +4,8 @@ import { WashingMachine } from 'lucide-react';
 const WashingMachinePage = () => (
   <ServiceLayout 
     title="Washing Machine"
-    desc="Precision Drum & Motor Engineering"
-    longDesc="Our master technicians specialize in complete restoration for both front-load and top-load systems. From complex logic board failures to mechanical drum vibrations, we ensure factory-grade performance with every fix."
+    desc="Precision Drum & Motor Appliance"
+    longDesc="Our master appliance repairs specialize in complete restoration for both front-load and top-load systems. From complex logic board failures to mechanical drum vibrations, we ensure factory-grade performance with every fix."
     icon={<WashingMachine size={24} />}
     image="/washing.png"
     extraContent={
@@ -59,13 +59,13 @@ const WashingMachinePage = () => (
         </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Technical Quality Assurance</h3>
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">care Quality Assurance</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
-            Every component we use is a 100% original manufacturer spare. Our engineers undergo rigorous multi-point training to maintain technical superiority across brands like Samsung, LG, and Bosch.
+            Every component we use is a 100% original manufacturer spare. Our appliance repairs undergo rigorous multi-point training to maintain care superiority across brands like Samsung, LG, and Bosch.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Top Load", val: "Engineering" },
+              { label: "Top Load", val: "Appliance" },
               { label: "Front Load", val: "Diagnostics" },
               { label: "OEM Parts", val: "Guaranteed" },
               { label: "Rapid Sync", val: "Deployment" }

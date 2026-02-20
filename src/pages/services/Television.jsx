@@ -5,15 +5,15 @@ const TelevisionPage = () => (
   <ServiceLayout 
     title="Television"
     desc="Advanced Display & Logic Board Repair"
-    longDesc="Precision engineering for high-resolution entertainment. We specialize in LED/OLED panel restoration, backlight synchronization, and complex motherboard circuit repairs for all premium smart TV brands."
+    longDesc="Precision Appliance for high-resolution entertainment. We specialize in LED/OLED panel restoration, backlight synchronization, and complex motherboard circuit repairs for all premium smart TV brands."
     icon={<Monitor size={24} />}
     image="/tv.jpg"
     extraContent={
       <div className="space-y-16">
         <section>
-          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Crystal Clear Engineering</h2>
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Crystal Clear Appliance</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            Your TV is a complex processing unit. Whether it's a distorted panel or a complete power failure, our technicians utilize infrared BGA rework stations to restore your visual experience to its original factory clarity.
+            Your TV is a complex processing unit. Whether it's a distorted panel or a complete power failure, our appliance repairs utilize infrared BGA rework stations to restore your visual experience to its original factory clarity.
           </p>
         </section>
 
@@ -61,11 +61,11 @@ const TelevisionPage = () => (
         <section>
           <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Precision Handling</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
-            Fragile display panels require absolute atmospheric control and specialized vacuum tools. We ensure your television is processed in a lint-free technical environment to prevent internal pixel contamination.
+            Fragile display panels require absolute atmospheric control and specialized vacuum tools. We ensure your television is processed in a lint-free care environment to prevent internal pixel contamination.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "OLED/QLED", val: "Mastery" },
+              { label: "OLED/QLED", val: "Expertise" },
               { label: "4K / 8K", val: "Diagnostics" },
               { label: "Original", val: "Components" },
               { label: "Safe Transport", val: "Protocol" }

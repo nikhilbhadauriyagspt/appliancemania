@@ -123,7 +123,7 @@ const ServiceLayout = ({ title, desc, longDesc, icon, image, extraContent }) => 
                   onClick={() => setIsModalOpen(true)}
                   className="flex-[1.5] py-5 px-10 bg-emerald-600 hover:bg-white hover:text-gray-950 text-white rounded-[24px] font-black text-[11px] uppercase tracking-[0.3em] transition-all shadow-xl shadow-emerald-600/20 active:scale-95 flex items-center justify-center gap-4 cursor-pointer"
                 >
-                  Book Specialist <ArrowRight size={18} />
+                  Book appliance care <ArrowRight size={18} />
                 </button>
               </div>
             </div>

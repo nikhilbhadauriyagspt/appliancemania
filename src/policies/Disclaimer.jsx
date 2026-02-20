@@ -35,7 +35,7 @@ const Disclaimer = () => {
           <section className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
             <h2 className="text-2xl font-bold text-gray-900 mb-4 uppercase">Professional Disclaimer</h2>
             <p>
-              The Site cannot and does not contain appliance repair advice. The technical information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals.
+              The Site cannot and does not contain appliance repair advice. The care information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals.
             </p>
             <p className="italic text-gray-600">
               THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THE SITE IS SOLELY AT YOUR OWN RISK.

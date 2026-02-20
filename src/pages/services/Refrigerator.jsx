@@ -5,7 +5,7 @@ const RefrigeratorPage = () => (
   <ServiceLayout 
     title="Refrigerator"
     desc="Master Cooling & Compressor Diagnostics"
-    longDesc="Expert thermal engineering for all major brands. We specialize in compressor restoration, precision gas charging, thermostat calibration, and high-efficiency seal replacements using 100% genuine OEM components."
+    longDesc="Expert thermal Appliance for all major brands. We specialize in compressor restoration, precision gas charging, thermostat calibration, and high-efficiency seal replacements using 100% genuine OEM components."
     icon={<Refrigerator size={24} />}
     image="/refrigerator.png"
     extraContent={
@@ -13,7 +13,7 @@ const RefrigeratorPage = () => (
         <section>
           <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Preserving Your Freshness</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            Your refrigerator is the critical center of your kitchen. When cooling fails or strange mechanical noises occur, immediate professional attention is vital. Our engineers specialize in single-door, double-door, and premium side-by-side technical systems.
+            Your refrigerator is the critical center of your kitchen. When cooling fails or strange mechanical noises occur, immediate professional attention is vital. Our appliance repairs specialize in single-door, double-door, and premium side-by-side care systems.
           </p>
         </section>
 
@@ -59,13 +59,13 @@ const RefrigeratorPage = () => (
         </section>
 
         <section>
-          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Diagnostic Mastery</h3>
+          <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Diagnostic Expertise</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
-            We utilize advanced thermal imaging and pressure gauges to detect micro-leaks and electrical faults that conventional inspections miss. This ensures a permanent engineering fix rather than a temporary patch.
+            We utilize advanced thermal imaging and pressure gauges to detect micro-leaks and electrical faults that conventional inspections miss. This ensures a permanent Appliance fix rather than a temporary patch.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Side-by-Side", val: "Engineering" },
+              { label: "Side-by-Side", val: "Appliance" },
               { label: "Double Door", val: "Diagnostics" },
               { label: "Gas Flow", val: "Guaranteed" },
               { label: "90-Day", val: "Deployment" }

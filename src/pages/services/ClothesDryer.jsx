@@ -5,7 +5,7 @@ const ClothesDryerPage = () => (
   <ServiceLayout 
     title="Clothes Dryer"
     desc="Thermal Regulation & Drum Belt Restoration"
-    longDesc="Engineered drying performance for all weather conditions. Our technicians specialize in high-temperature sensor calibration, drive belt restoration, and multi-stage heating element repairs for vented and heat-pump dryer systems."
+    longDesc="appliance repaired drying performance for all weather conditions. Our appliance repairs specialize in high-temperature sensor calibration, drive belt restoration, and multi-stage heating element repairs for vented and heat-pump dryer systems."
     icon={<Wind size={24} />}
     image="/clothes.jpg"
     extraContent={
@@ -13,7 +13,7 @@ const ClothesDryerPage = () => (
         <section>
           <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Precision Thermal Cycle</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            A dryer is a high-energy appliance that requires absolute technical precision to prevent fabric damage or fire risks. We utilize digital thermal probes to ensure your unit reaches and maintains optimal technical drying temperatures.
+            A dryer is a high-energy appliance that requires absolute care precision to prevent fabric damage or fire risks. We utilize digital thermal probes to ensure your unit reaches and maintains optimal care drying temperatures.
           </p>
         </section>
 
@@ -65,7 +65,7 @@ const ClothesDryerPage = () => (
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Vent Care", val: "Engineering" },
+              { label: "Vent Care", val: "Appliance" },
               { label: "Heat Pump", val: "Diagnostics" },
               { label: "OEM Belt", val: "Guaranteed" },
               { label: "Safe Run", val: "Deployment" }

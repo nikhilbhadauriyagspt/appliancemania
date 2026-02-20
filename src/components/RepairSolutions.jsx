@@ -123,7 +123,7 @@ const RepairSolutions = () => {
           </div>
           <div className="max-w-xs pb-4">
              <p className="text-gray-400 font-bold text-xs md:text-sm border-l-4 border-amber-500 pl-8 uppercase tracking-widest leading-relaxed">
-              Precision engineering for every household appliance. We restore performance using 100% genuine parts.
+              Precision Appliance for every household appliance. We restore performance using 100% genuine parts.
             </p>
           </div>
         </div>

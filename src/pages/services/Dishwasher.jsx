@@ -5,15 +5,15 @@ const DishwasherPage = () => (
   <ServiceLayout 
     title="Dishwasher"
     desc="Precision Pump & Drainage Restoration"
-    longDesc="Engineered hygiene for your culinary environment. We specialize in high-pressure pump diagnostics, spray arm calibration, and comprehensive thermal sanitation system repairs for all high-end dishwasher units."
+    longDesc="appliance repaired hygiene for your culinary environment. We specialize in high-pressure pump diagnostics, spray arm calibration, and comprehensive thermal sanitation system repairs for all high-end dishwasher units."
     icon={<Waves size={24} />}
     image="/dish.png"
     extraContent={
       <div className="space-y-16">
         <section>
-          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Automated Hygiene Engineering</h2>
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Automated Hygiene Appliance</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            A malfunctioning dishwasher is a breakdown in your kitchen's sanitary protocol. Our technicians address complex water circulation issues and thermal failures to ensure your systems restore items to medical-grade cleanliness.
+            A malfunctioning dishwasher is a breakdown in your kitchen's sanitary protocol. Our appliance repairs address complex water circulation issues and thermal failures to ensure your systems restore items to medical-grade cleanliness.
           </p>
         </section>
 
@@ -61,11 +61,11 @@ const DishwasherPage = () => (
         <section>
           <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Precision Performance</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
-            Dishwashers utilize complex water-softening units and high-temperature cycles. We utilize digital flow-meters to verify that your unit is consuming optimal resources while delivering maximum technical performance.
+            Dishwashers utilize complex water-softening units and high-temperature cycles. We utilize digital flow-meters to verify that your unit is consuming optimal resources while delivering maximum care performance.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "High Temp", val: "Engineering" },
+              { label: "High Temp", val: "Appliance" },
               { label: "Auto Cycle", val: "Diagnostics" },
               { label: "OEM Pump", val: "Guaranteed" },
               { label: "Hygiene", val: "Deployment" }

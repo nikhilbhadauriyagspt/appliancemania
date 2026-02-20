@@ -9,7 +9,7 @@ export const servicesData = [
     id: "washing-machine",
     title: "Washing Machine", 
     desc: "Drum & motor repair", 
-    longDesc: "Our specialists handle everything from front-load to top-load machines. Whether it's a motor failure, drum noise, or water leakage, we restore your machine to factory performance.",
+    longDesc: "Our appliance cares handle everything from front-load to top-load machines. Whether it's a motor failure, drum noise, or water leakage, we restore your machine to factory performance.",
     icon: <WashingMachine size={24} />, 
     image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop" 
   },

@@ -144,7 +144,7 @@ const Footer = () => {
                <div className="relative z-10">
                  <div className="flex items-center gap-2 mb-4">
                    <Sparkles size={16} className="text-emerald-600" />
-                   <h3 className="text-gray-950 text-sm font-black uppercase tracking-tight">Technical Journal</h3>
+                   <h3 className="text-gray-950 text-sm font-black uppercase tracking-tight">care Journal</h3>
                  </div>
                  <form onSubmit={handleSubscribe} className="space-y-3">
                    <div className="relative">

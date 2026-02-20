@@ -5,7 +5,7 @@ import BookingModal from './BookingModal';
 const slides = [
   {
     id: "01",
-    tag: "Certified Engineering",
+    tag: "Certified Appliance",
     title: "Revolutionizing",
     highlight: "Washing Care.",
     desc: "Precision motor calibration and drum restoration using genuine manufacturer components.",
@@ -15,7 +15,7 @@ const slides = [
   },
   {
     id: "02",
-    tag: "Cooling Specialists",
+    tag: "Cooling appliance cares",
     title: "Mastering Pro",
     highlight: "Refrigerator Fix.",
     desc: "Advanced thermodynamic diagnostics and eco-friendly gas recharging for all premium brands.",
@@ -28,7 +28,7 @@ const slides = [
     tag: "Kitchen Masters",
     title: "High-Performance",
     highlight: "Oven Repair.",
-    desc: "Safety-first technical troubleshooting for modern heating systems and digital controls.",
+    desc: "Safety-first care diagnostics for modern heating systems and digital controls.",
     image: "/hero-cook.jpg",
     accent: "text-emerald-500",
     color: "emerald"
@@ -103,7 +103,7 @@ const Hero = () => {
               onClick={() => setIsModalOpen(true)}
               className="group relative w-full sm:w-auto px-10 py-5 bg-emerald-600 text-white rounded-2xl font-black text-[10px] uppercase tracking-[0.3em] hover:bg-white hover:text-gray-950 transition-all shadow-2xl shadow-emerald-600/20 active:scale-95 flex items-center justify-center gap-3 cursor-pointer"
             >
-              Book Specialist <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              Book Appliance Care <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
         </div>
@@ -182,7 +182,7 @@ const Hero = () => {
       <BookingModal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 
-        serviceTitle="Elite Technical Support" 
+        serviceTitle="Elite Appliance Care" 
       />
     </section>
   );

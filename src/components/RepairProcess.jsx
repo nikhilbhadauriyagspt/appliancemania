@@ -86,7 +86,7 @@ const RepairProcess = () => {
             onClick={() => setIsModalOpen(true)}
             className="px-12 py-6 bg-gray-950 text-white rounded-2xl font-black text-[10px] uppercase tracking-[0.3em] hover:bg-emerald-600 transition-all shadow-2xl shadow-gray-900/10 active:scale-95 flex items-center justify-center gap-4 group cursor-pointer"
           >
-            Book Specialist Now <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+            Book appliance care Now <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 

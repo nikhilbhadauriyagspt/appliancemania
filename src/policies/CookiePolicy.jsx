@@ -44,7 +44,7 @@ const CookiePolicy = () => {
               <li>Improve our services and user experience</li>
             </ul>
             <p>
-              Cookies may collect technical information such as IP address, browser type, device
+              Cookies may collect care information such as IP address, browser type, device
               information, and browsing behavior, as described in our <Link to="/privacy-policy" className="text-primary hover:underline font-bold">PRIVACY POLICY</Link>.
             </p>
           </section>

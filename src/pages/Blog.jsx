@@ -49,7 +49,7 @@ const Blog = () => {
             </h1>
           </div>
           <p className="text-gray-400 font-bold text-[10px] uppercase tracking-[0.2em] border-l-2 border-amber-500 pl-6 mb-2 max-w-[200px]">
-            Technical mastery and maintenance strategies.
+            care Expertise and maintenance strategies.
           </p>
         </div>
 

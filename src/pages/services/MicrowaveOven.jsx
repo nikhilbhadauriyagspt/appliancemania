@@ -5,7 +5,7 @@ const MicrowaveOvenPage = () => (
   <ServiceLayout 
     title="Microwave Oven"
     desc="Magnetron & High-Voltage Circuitry Fix"
-    longDesc="Precision microwave engineering for the modern kitchen. We specialize in high-voltage transformer restoration, magnetron diagnostics, and sophisticated touch-panel circuit repairs for all countertop and built-in convection models."
+    longDesc="Precision microwave Appliance for the modern kitchen. We specialize in high-voltage transformer restoration, magnetron diagnostics, and sophisticated touch-panel circuit repairs for all countertop and built-in convection models."
     icon={<Microwave size={24} />}
     image="/micro.jpg"
     extraContent={
@@ -13,13 +13,13 @@ const MicrowaveOvenPage = () => (
         <section>
           <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Radiation Safe Restoration</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            A malfunctioning microwave requires extreme technical caution. Our engineers utilize electromagnetic leak detectors and high-voltage discharge protocols to ensure your unit is technically sound and perfectly safe for culinary use.
+            A malfunctioning microwave requires extreme care caution. Our appliance repairs utilize electromagnetic leak detectors and high-voltage discharge protocols to ensure your unit is carely sound and perfectly safe for culinary use.
           </p>
         </section>
 
         <section className="bg-gray-950 p-10 md:p-12 rounded-[48px] text-white relative overflow-hidden group shadow-2xl">
           <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-600/10 blur-[80px] -mr-32 -mt-32" />
-          <h3 className="text-2xl font-black mb-10 uppercase tracking-tight text-white relative z-10">Technical Diagnostics:</h3>
+          <h3 className="text-2xl font-black mb-10 uppercase tracking-tight text-white relative z-10">care Diagnostics:</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
             <div className="space-y-6">
@@ -61,11 +61,11 @@ const MicrowaveOvenPage = () => (
         <section>
           <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Safety-First Protocol</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
-            Microwaves contain high-voltage components that can be lethal even when unplugged. Our master technicians follow strict ISO safety standards, ensuring every unit passes a rigorous radiation leak test before being cleared for operation.
+            Microwaves contain high-voltage components that can be lethal even when unplugged. Our master appliance repairs follow strict ISO safety standards, ensuring every unit passes a rigorous radiation leak test before being cleared for operation.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Convection", val: "Engineering" },
+              { label: "Convection", val: "Appliance" },
               { label: "Solo Micro", val: "Diagnostics" },
               { label: "OEM Parts", val: "Guaranteed" },
               { label: "Leak Test", val: "Deployment" }

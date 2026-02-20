@@ -4,16 +4,16 @@ import { Cpu } from 'lucide-react';
 const OtherAppliancesPage = () => (
   <ServiceLayout 
     title="Other Appliances"
-    desc="Specialized Multi-Device Technical Support"
-    longDesc="Expert engineering for your entire appliance ecosystem. From precision mixer motor restoration to sophisticated digital iron circuitry, we provide certified technical solutions for all essential household machines."
+    desc="Specialized Multi-Device care Support"
+    longDesc="Expert Appliance for your entire appliance ecosystem. From precision mixer motor restoration to sophisticated digital iron circuitry, we provide certified care solutions for all essential household machines."
     icon={<Cpu size={24} />}
     image="/others.jpg"
     extraContent={
       <div className="space-y-16">
         <section>
-          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Universal Engineering Support</h2>
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Universal Appliance Support</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            Every device in your home deserves master-level attention. Our laboratory is equipped to handle specialized repairs for smaller but critical household units, ensuring they return to their original technical operational standards.
+            Every device in your home deserves master-level attention. Our laboratory is equipped to handle specialized repairs for smaller but critical household units, ensuring they return to their original care operational standards.
           </p>
         </section>
 
@@ -61,11 +61,11 @@ const OtherAppliancesPage = () => (
         <section>
           <h3 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Certified Multi-Brand Lab</h3>
           <p className="text-gray-500 leading-relaxed font-medium mb-12 uppercase tracking-wide text-sm">
-            We maintain an extensive inventory of specialized micro-components and original spare parts for hundreds of models. Our goal is to extend the lifecycle of your entire appliance portfolio through sustainable technical maintenance.
+            We maintain an extensive inventory of specialized micro-components and original spare parts for hundreds of models. Our goal is to extend the lifecycle of your entire appliance portfolio through sustainable care maintenance.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Multi-Fix", val: "Engineering" },
+              { label: "Multi-Fix", val: "Appliance" },
               { label: "Micro-Logic", val: "Diagnostics" },
               { label: "OEM Spares", val: "Guaranteed" },
               { label: "Eco-Repair", val: "Deployment" }

@@ -44,7 +44,7 @@ const About = () => {
                   <div className="flex justify-between items-end">
                     <div>
                       <div className="text-3xl font-black mb-1">9+ Years</div>
-                      <div className="text-[10px] uppercase tracking-widest opacity-80">Of Mastery</div>
+                      <div className="text-[10px] uppercase tracking-widest opacity-80">Of Expertise</div>
                     </div>
                     <Award size={32} className="text-amber-400" />
                   </div>
@@ -87,7 +87,7 @@ const About = () => {
             <DarkValueCard 
               icon={<Clock size={32} />}
               title="Timely Response"
-              desc="Technicians aim to reach your doorstep within 60 minutes of booking."
+              desc="appliance repairs aim to reach your doorstep within 60 minutes of booking."
               accent="amber"
             />
             <DarkValueCard 
@@ -107,14 +107,14 @@ const About = () => {
             
             <div className="w-full lg:w-1/2 relative z-10">
               <span className="text-amber-500 font-black text-[10px] uppercase tracking-[0.3em] mb-4 block">Our Promise</span>
-              <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-8 tracking-tight">Commitment to <br /> Technical Excellence.</h2>
+              <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-8 tracking-tight">Commitment to <br /> care Excellence.</h2>
               
               <div className="space-y-6">
                 {[
                   'Direct access to original OEM parts', 
                   'Transparent upfront pricing model', 
                   '90-Day comprehensive service warranty', 
-                  'Fully background-checked technicians'
+                  'Fully background-checked appliance repairs'
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4">
                     <div className="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-emerald-600 shrink-0 shadow-sm">
@@ -166,7 +166,7 @@ const About = () => {
             <TimelineItem 
               step="01"
               title="Initial Diagnostics"
-              desc="Our technicians use precision tools to identify the root cause of the issue, ensuring we don't just fix symptoms but solve the real problem."
+              desc="Our appliance repairs use precision tools to identify the root cause of the issue, ensuring we don't just fix symptoms but solve the real problem."
               side="left"
             />
             <TimelineItem 
@@ -178,7 +178,7 @@ const About = () => {
             <TimelineItem 
               step="03"
               title="Precision Repair"
-              desc="The actual repair is performed in a controlled manner, following strict safety protocols and technical guidelines for your specific brand."
+              desc="The actual repair is performed in a controlled manner, following strict safety protocols and care guidelines for your specific brand."
               side="left"
             />
             <TimelineItem 
@@ -210,7 +210,7 @@ const About = () => {
               </h2>
               
               <p className="text-gray-400 text-sm md:text-base font-medium mb-12 max-w-xl mx-auto uppercase tracking-widest leading-relaxed">
-                Join thousands of happy customers who trust APPLIANCEMANIA for their home appliance maintenance and technical support.
+                Join thousands of happy customers who trust APPLIANCEMANIA for their home appliance maintenance and care support.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center items-center gap-6">

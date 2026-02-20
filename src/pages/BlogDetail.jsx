@@ -112,7 +112,7 @@ const BlogDetail = () => {
                 <Sparkles size={32} />
               </div>
               <h3 className="text-2xl md:text-4xl font-black text-gray-950 tracking-tighter uppercase mb-6">Did this insight <span className="text-emerald-500 italic">help?</span></h3>
-              <p className="text-gray-500 mb-12 max-w-md mx-auto text-sm md:text-base font-medium uppercase tracking-widest leading-relaxed">Subscribe to our technical journal for the latest maintenance strategies and appliance care tips.</p>
+              <p className="text-gray-500 mb-12 max-w-md mx-auto text-sm md:text-base font-medium uppercase tracking-widest leading-relaxed">Subscribe to our care journal for the latest maintenance strategies and appliance care tips.</p>
               <div className="flex justify-center">
                 <Link to="/blog" className="px-12 py-6 bg-gray-950 text-white rounded-2xl font-black text-[10px] uppercase tracking-[0.25em] hover:bg-emerald-600 transition-all shadow-xl active:scale-95">
                   Back to All Articles

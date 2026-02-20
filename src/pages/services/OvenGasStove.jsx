@@ -4,16 +4,16 @@ import { Flame } from 'lucide-react';
 const OvenGasStovePage = () => (
   <ServiceLayout 
     title="Oven & Gas Stove"
-    desc="Thermal Calibration & Safety Engineering"
+    desc="Thermal Calibration & Safety Appliance"
     longDesc="Precision heat management for the professional home kitchen. We specialize in digital thermostat calibration, high-performance burner cleaning, and leak-proof gas line restoration for all premium cooking ranges."
     icon={<Flame size={24} />}
     image="/Ove.jpg"
     extraContent={
       <div className="space-y-16">
         <section>
-          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Controlled Combustion Mastery</h2>
+          <h2 className="text-2xl font-black text-gray-950 mb-6 uppercase tracking-tighter">Controlled Combustion Expertise</h2>
           <p className="text-gray-500 leading-relaxed font-medium text-sm md:text-base uppercase tracking-wide">
-            Cooking appliances require absolute safety protocols. Whether it's an uneven flame or a digital oven control failure, our master technicians utilize electronic gas sniffers and thermal probes to ensure your kitchen remains a safe high-performance environment.
+            Cooking appliances require absolute safety protocols. Whether it's an uneven flame or a digital oven control failure, our master appliance repairs utilize electronic gas sniffers and thermal probes to ensure your kitchen remains a safe high-performance environment.
           </p>
         </section>
 
@@ -65,7 +65,7 @@ const OvenGasStovePage = () => (
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { label: "Gas Range", val: "Engineering" },
+              { label: "Gas Range", val: "Appliance" },
               { label: "Built-in Oven", val: "Diagnostics" },
               { label: "OEM Parts", val: "Guaranteed" },
               { label: "Safety Run", val: "Deployment" }

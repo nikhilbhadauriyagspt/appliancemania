@@ -72,7 +72,7 @@ const BookingModal = ({ isOpen, onClose, serviceTitle }) => {
               Elite <br /> Appliance <br /> Care.
             </h2>
             <p className="text-emerald-100 text-xs font-bold uppercase tracking-widest leading-relaxed">
-              Our master engineers are ready to restore your appliance to peak performance.
+              Our master appliance repairs are ready to restore your appliance to peak performance.
             </p>
           </div>
 
@@ -154,7 +154,7 @@ const BookingModal = ({ isOpen, onClose, serviceTitle }) => {
                   disabled={isSubmitting}
                   className="w-full py-5 bg-gray-950 text-white rounded-2xl font-black text-[10px] uppercase tracking-[0.3em] hover:bg-emerald-600 transition-all active:scale-95 flex items-center justify-center gap-3 disabled:opacity-50"
                 >
-                  {isSubmitting ? 'Processing...' : <>Confirm Booking <Send size={14} /></>}
+                  {isSubmitting ? 'Processing...' : <>Confirm Appliance Care <Send size={14} /></>}
                 </button>
               </form>
             </div>

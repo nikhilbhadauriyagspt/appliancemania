@@ -141,7 +141,7 @@ const Header = () => {
                           <Wrench size={20} />
                         </div>
                         <h4 className="text-xl font-black text-white leading-tight mb-4 tracking-tighter">Emergency <br /> Repair <span className="text-amber-500 italic">24/7.</span></h4>
-                        <p className="text-gray-400 text-[10px] font-medium leading-relaxed uppercase tracking-widest mb-8">Certified engineers available for same-day home visits.</p>
+                        <p className="text-gray-400 text-[10px] font-medium leading-relaxed uppercase tracking-widest mb-8">Certified appliance repairs available for same-day home visits.</p>
                       </div>
                       <button 
                         onClick={() => {
@@ -226,7 +226,7 @@ const Header = () => {
               onClick={() => { setIsModalOpen(true); setIsMenuOpen(false); }}
               className="w-full py-5 bg-gray-950 text-white rounded-[24px] font-black text-[10px] uppercase tracking-[0.2em] shadow-xl"
             >
-              Book Specialist
+              Book Appliance Care care
             </button>
             <a href="tel:+91XXXXXXXXXX" className="w-full py-5 bg-emerald-50 text-emerald-600 rounded-[24px] font-black text-[10px] uppercase tracking-[0.2em] text-center border border-emerald-100">
               Call Support

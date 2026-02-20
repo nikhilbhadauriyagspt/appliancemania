@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const faqs = [
   {
     question: "How quickly can you repair my appliance?",
-    answer: "Most repairs are completed within 60-90 minutes of the technician's arrival. We carry common spare parts to ensure same-day resolution for over 90% of service calls."
+    answer: "Most repairs are completed within 60-90 minutes of the appliance repair's arrival. We carry common spare parts to ensure same-day resolution for over 90% of service calls."
   },
   {
     question: "Are the spare parts genuine?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Is emergency service available?",
-    answer: "Yes, we offer priority emergency booking. Requests made before 12:00 PM are guaranteed a technician visit by the evening of the same day."
+    answer: "Yes, we offer priority emergency booking. Requests made before 12:00 PM are guaranteed a appliance repair visit by the evening of the same day."
   }
 ];
 

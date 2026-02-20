@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AboutOrganization = () => {
   return (
     <section className="py-24 md:py-40 bg-white relative overflow-hidden" id="about-hub">
-      {/* 1. Mastery Background Ornaments */}
+      {/* 1. Expertise Background Ornaments */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-100 to-transparent" />
       <div className="absolute top-40 right-0 w-[500px] h-[500px] bg-emerald-50/40 rounded-full blur-[120px] -mr-48 -z-10" />
       <div className="absolute bottom-40 left-0 w-[400px] h-[400px] bg-amber-50/30 rounded-full blur-[100px] -ml-48 -z-10" />
@@ -24,7 +24,7 @@ const AboutOrganization = () => {
 
             <div className="space-y-8 mb-16">
               <p className="text-gray-500 text-base md:text-lg font-medium leading-relaxed uppercase tracking-wide">
-                At <span className="text-gray-950 font-black italic uppercase">APPLIANCEMANIA</span>, we are redefining the standard of home service through expert precision and absolute transparency.
+                At <span className="text-gray-950 font-black italic uppercase">APPLIANCEMANIA</span>, we are redefining the standard of home service through appliance care and absolute transparency.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-4">
@@ -33,7 +33,7 @@ const AboutOrganization = () => {
                     <ShieldCheck size={24} />
                   </div>
                   <h4 className="text-[11px] font-black text-gray-950 uppercase tracking-[0.2em] mb-3">Trained Techs</h4>
-                  <p className="text-gray-400 text-[10px] font-bold uppercase tracking-widest leading-relaxed">Master experts certified for high-end appliance maintenance.</p>
+                  <p className="text-gray-400 text-[10px] font-bold uppercase tracking-widest leading-relaxed">Appliance Repair Experts certified for high-end appliance maintenance.</p>
                 </div>
 
                 <div className="group">
