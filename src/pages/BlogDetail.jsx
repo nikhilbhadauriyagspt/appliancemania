@@ -90,9 +90,9 @@ const BlogDetail = () => {
 
       {/* 2. Hero Image Stage */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <div className="rounded-[60px] overflow-hidden shadow-2xl h-[400px] md:h-[600px] relative border-8 border-gray-50 group">
-          <img loading="lazy" src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-950/20 to-transparent" />
+        <div className="rounded-[60px] overflow-hidden shadow-2xl relative border-8 border-gray-50 group">
+          <img loading="lazy" src={post.image} alt={post.title} className="w-full h-auto block transition-transform duration-1000 group-hover:scale-105" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-950/20 to-transparent pointer-events-none" />
         </div>
       </div>
 

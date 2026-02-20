@@ -42,9 +42,11 @@ const ServiceLayout = ({ title, desc, longDesc, icon, image, extraContent }) => 
           
           <div className="px-6 py-16 lg:p-24 max-w-3xl mx-auto">
             <div className="prose prose-lg max-w-none mb-16">
-              <p className="text-xl lg:text-2xl font-medium text-gray-900 leading-relaxed mb-12 uppercase tracking-tight">
-                {longDesc}
-              </p>
+              <div className="relative mb-16 border-l-2 border-emerald-500 pl-10">
+                <p className="text-xl lg:text-2xl font-semibold text-gray-800 leading-relaxed tracking-tight">
+                  {longDesc}
+                </p>
+              </div>
               
               <div className="bg-gray-50 border border-gray-100 rounded-[32px] p-8 mb-16">
                 <h3 className="text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-8 flex items-center gap-2">
