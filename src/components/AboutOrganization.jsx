@@ -62,20 +62,6 @@ const AboutOrganization = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-gray-950/20 via-transparent to-transparent" />
               </div>
 
-              {/* Floating Performance Badge */}
-              <div className="absolute -bottom-10 -right-6 md:-right-12 bg-white/90 backdrop-blur-2xl p-8 rounded-[40px] shadow-2xl border border-white z-20 max-w-[240px] animate-bounce-slow">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white">
-                    <Award size={24} />
-                  </div>
-                  <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none">9+ Years of <br /> Experience</span>
-                </div>
-                <h3 className="text-xl font-black text-gray-950 uppercase tracking-tighter leading-none text-center">Guaranteed Precision Care</h3>
-                <div className="w-full h-1 bg-gray-50 mt-4 rounded-full overflow-hidden">
-                  <div className="w-3/4 h-full bg-emerald-500" />
-                </div>
-              </div>
-
               {/* Decorative Background Frame */}
               <div className="absolute -bottom-12 -left-12 w-64 h-64 border-2 border-amber-500/20 rounded-[60px] -z-10 transform -rotate-6" />
               <div className="absolute -top-12 -right-12 w-48 h-48 bg-emerald-50 rounded-full blur-3xl -z-10 opacity-60" />

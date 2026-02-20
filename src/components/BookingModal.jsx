@@ -122,14 +122,14 @@ const BookingModal = ({ isOpen, onClose, serviceTitle }) => {
                     <label className="text-[9px] font-black text-gray-400 uppercase tracking-widest ml-1">Full Name</label>
                     <div className="flex items-center gap-3 px-5 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus-within:border-emerald-500 focus-within:bg-white transition-all">
                       <User size={16} className="text-gray-300" />
-                      <input required name="fullName" type="text" className="flex-1 bg-transparent border-none outline-none text-sm font-bold text-gray-900 placeholder:text-gray-300" placeholder="Rahul Sharma" />
+                      <input required name="fullName" type="text" className="flex-1 bg-transparent border-none outline-none text-sm font-bold text-gray-900 placeholder:text-gray-300" placeholder="" />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <label className="text-[9px] font-black text-gray-400 uppercase tracking-widest ml-1">Mobile Number</label>
                     <div className="flex items-center gap-3 px-5 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus-within:border-emerald-500 focus-within:bg-white transition-all">
                       <Phone size={16} className="text-gray-300" />
-                      <input required name="phone" type="tel" className="flex-1 bg-transparent border-none outline-none text-sm font-bold text-gray-900 placeholder:text-gray-300" placeholder="+91 XXXXX XXXXX" />
+                      <input required name="phone" type="tel" className="flex-1 bg-transparent border-none outline-none text-sm font-bold text-gray-900 placeholder:text-gray-300" placeholder="" />
                     </div>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const BookingModal = ({ isOpen, onClose, serviceTitle }) => {
                   <label className="text-[9px] font-black text-gray-400 uppercase tracking-widest ml-1">Email Address</label>
                   <div className="flex items-center gap-3 px-5 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus-within:border-emerald-500 focus-within:bg-white transition-all">
                     <Mail size={16} className="text-gray-300" />
-                    <input required name="email" type="email" className="flex-1 bg-transparent border-none outline-none text-sm font-bold text-gray-900 placeholder:text-gray-300" placeholder="rahul@example.com" />
+                    <input required name="email" type="email" className="flex-1 bg-transparent border-none outline-none text-sm font-bold text-gray-900 placeholder:text-gray-300" placeholder="" />
                   </div>
                 </div>
 

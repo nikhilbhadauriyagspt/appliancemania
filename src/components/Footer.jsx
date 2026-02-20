@@ -153,7 +153,7 @@ const Footer = () => {
                        type="email" 
                        value={email}
                        onChange={(e) => setEmail(e.target.value)}
-                       placeholder="EMAIL ADDRESS" 
+                       placeholder="email address" 
                        className="w-full bg-white border border-gray-100 rounded-xl px-5 py-3 text-gray-950 text-xs font-black uppercase tracking-widest outline-none focus:border-emerald-500 transition-all shadow-sm placeholder:text-gray-300"
                      />
                    </div>
