@@ -127,14 +127,22 @@ const About = () => {
             </div>
 
             <div className="w-full lg:w-1/2 relative h-[400px]">
-              <div className="absolute inset-0 grid grid-cols-2 gap-4 transform rotate-3 scale-110">
-                <div className="space-y-4 -mt-12">
-                  <img src="/about-child1.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
-                  <img src="/about-main.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
+              <div className="absolute inset-0 grid grid-cols-2 gap-4 transform rotate-3 scale-95">
+                <div className="space-y-4 -mt-8">
+                  <div className="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-64">
+                    <img src="/about-child1.jpg" className="w-full h-full object-cover" alt="" />
+                  </div>
+                  <div className="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-64">
+                    <img src="/about-main.jpg" className="w-full h-full object-cover" alt="" />
+                  </div>
                 </div>
                 <div className="space-y-4">
-                  <img src="/about-child2.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
-                  <img src="/hero-washing.jpg" className="w-full h-64 object-cover rounded-3xl shadow-lg" alt="" />
+                  <div className="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-64">
+                    <img src="/about-child2.jpg" className="w-full h-full object-cover" alt="" />
+                  </div>
+                  <div className="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-64">
+                    <img src="/hero-washing.jpg" className="w-full h-full object-cover" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
