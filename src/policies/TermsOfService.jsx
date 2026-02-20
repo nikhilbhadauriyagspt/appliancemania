@@ -17,7 +17,7 @@ const TermsOfService = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-4 uppercase">AGREEMENT TO OUR LEGAL TERMS</h2>
             <p>
               We are appliancemania ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>"), a company operating in Long Beach,
-              United States at 128 E Pacific Coast Hwy, Long Beach, CA 90813, USA.
+              United States at B. W. Cooper, New Orleans, LA, USA.
             </p>
             <p>
               We operate the website <a href="https://appliancemania.shop/" className="text-primary hover:text-secondary">https://appliancemania.shop/</a> (the "<strong>Site</strong>"), as well as any other related
@@ -32,7 +32,7 @@ const TermsOfService = () => {
             </p>
             <p>
               You can contact us by email at <a href="mailto:info@appliancemania.shop" className="text-primary">info@appliancemania.shop</a>, or by
-              mail to 128 E Pacific Coast Hwy, Long Beach, CA 90813, USA.
+              mail to B. W. Cooper, New Orleans, LA, USA.
             </p>
             <p>
               These Legal Terms constitute a legally binding agreement made between you, whether
@@ -263,7 +263,7 @@ const TermsOfService = () => {
             <p>In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold">
               appliancemania<br />
-              128 E Pacific Coast Hwy, Long Beach, CA 90813, USA<br />
+              B. W. Cooper, New Orleans, LA, USA<br />
               United States<br />
               <a href="mailto:info@appliancemania.shop" className="text-primary">info@appliancemania.shop</a>
             </address>

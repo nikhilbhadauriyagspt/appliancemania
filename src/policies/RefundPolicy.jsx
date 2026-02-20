@@ -35,7 +35,7 @@ const RefundPolicy = () => {
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-6 leading-relaxed font-bold">
               appliancemania<br />
               Attn: Returns/Refunds<br />
-              128 E Pacific Coast Hwy, Long Beach, CA 90813, USA<br />
+              B. W. Cooper, New Orleans, LA, USA<br />
               United States
             </address>
           </section>
@@ -66,7 +66,7 @@ const RefundPolicy = () => {
             </p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold">
               appliancemania<br />
-              128 E Pacific Coast Hwy, Long Beach, CA 90813, USA<br />
+              B. W. Cooper, New Orleans, LA, USA<br />
               United States<br />
               Email: <a href="mailto:info@appliancemania.shop" className="text-primary hover:underline">info@appliancemania.shop</a>
             </address>

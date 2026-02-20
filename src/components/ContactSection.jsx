@@ -88,7 +88,7 @@ const ContactSection = () => {
                </div>
                <h3 className="text-xl font-black text-gray-950 mb-2 uppercase tracking-tight">Main HQ</h3>
                <p className="text-gray-400 text-[10px] font-black uppercase tracking-widest mb-6">Visit our central diagnostic facility.</p>
-               <span className="text-sm font-black text-gray-950 leading-tight block uppercase">128 E Pacific Coast Hwy, Long Beach,<br />CA 90813, USA</span>
+               <span className="text-sm font-black text-gray-950 leading-tight block uppercase">B. W. Cooper, New Orleans,<br />LA, USA</span>
             </div>
           </div>
 

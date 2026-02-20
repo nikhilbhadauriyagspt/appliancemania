@@ -267,7 +267,7 @@ const PrivacyPolicy = () => {
             <p>If you have questions or comments about this notice, you may email us at <strong>info@appliancemania.shop</strong> or contact us by post at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold">
               appliancemania<br />
-              128 E Pacific Coast Hwy, Long Beach, CA 90813, USA<br />
+              B. W. Cooper, New Orleans, LA, USA<br />
               United States
             </address>
           </section>

@@ -95,7 +95,7 @@ const Footer = () => {
                   <MapPin size={16} />
                 </div>
                 <p className="text-xs font-black text-gray-950 uppercase tracking-tighter leading-tight pt-1">
-                  128 E Pacific Coast Hwy, Long Beach, CA 90813, USA
+                  B. W. Cooper, New Orleans, LA, USA
                 </p>
               </div>
             </div>
